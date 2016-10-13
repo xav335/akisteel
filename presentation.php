@@ -1,30 +1,29 @@
+<?
+	include_once $_SERVER[ "DOCUMENT_ROOT" ] . "/admin/classes/utils.php";
+	require $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/inc.config.php";
+	
+	$debug = false;
+?>
+
 <!doctype html>
 <html class="no-js" lang="fr" dir="ltr">
 	<head>
 		<title>Présentation de la société AKISTEEL</title>
-		<?php include('inc/meta.php'); ?>
+		<? include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/meta.php" ); ?>
 	</head>
 	<body class="presentation">
 		
-		<?php include('inc/header.php'); ?>
+		<? include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/header.php" ); ?>
 		
 		<div class="row fullwidth content">
 			<div class="large-6 medium-6 small-12 columns">
 				<div class="contenu">
 					<div class="qui-sommes-nous">
 						<h1>Qui sommes-<span>nous</span> ?</h1>
-						<p>
-							Consectetur adipiscing elit. Suspendisse quis risus nec elit pharetra ultrices at id dui. Sed lobortis diam in adipiscing volutpat. Etiam volutpat in ipsum ut ultricies. Phasellus id bibendum quam. Sed justo felis, consequat sed magna vitae, rutrum auctor quam.
-						</p>
-						<p>
-							Consectetur adipiscing elit. Suspendisse quis risus nec elit pharetra ultrices at id dui. Sed lobortis diam in adipiscing volutpat. Etiam volutpat in ipsum ut ultricies. Phasellus id bibendum quam. Sed justo felis, consequat sed magna vitae, rutrum auctor quam.
-						</p>
-						<p>
-							Consectetur adipiscing elit. Suspendisse quis risus nec elit pharetra ultrices at id dui. Sed lobortis diam in adipiscing volutpat. Etiam volutpat in ipsum ut ultricies. Phasellus id bibendum quam. Sed justo felis, consequat sed magna vitae, rutrum auctor quam.
-						</p>
-						<p>
-							Consectetur adipiscing elit. Suspendisse quis risus nec elit pharetra ultrices at id dui. Sed lobortis diam in adipiscing volutpat. Etiam volutpat in ipsum ut ultricies. Phasellus id bibendum quam. Sed justo felis, consequat sed magna vitae, rutrum auctor quam.
-						</p>
+						<p>Consectetur adipiscing elit. Suspendisse quis risus nec elit pharetra ultrices at id dui. Sed lobortis diam in adipiscing volutpat. Etiam volutpat in ipsum ut ultricies. Phasellus id bibendum quam. Sed justo felis, consequat sed magna vitae, rutrum auctor quam.</p>
+						<p>Consectetur adipiscing elit. Suspendisse quis risus nec elit pharetra ultrices at id dui. Sed lobortis diam in adipiscing volutpat. Etiam volutpat in ipsum ut ultricies. Phasellus id bibendum quam. Sed justo felis, consequat sed magna vitae, rutrum auctor quam.</p>
+						<p>Consectetur adipiscing elit. Suspendisse quis risus nec elit pharetra ultrices at id dui. Sed lobortis diam in adipiscing volutpat. Etiam volutpat in ipsum ut ultricies. Phasellus id bibendum quam. Sed justo felis, consequat sed magna vitae, rutrum auctor quam.</p>
+						<p>Consectetur adipiscing elit. Suspendisse quis risus nec elit pharetra ultrices at id dui. Sed lobortis diam in adipiscing volutpat. Etiam volutpat in ipsum ut ultricies. Phasellus id bibendum quam. Sed justo felis, consequat sed magna vitae, rutrum auctor quam.</p>
 					</div>
 				</div>
 			</div>
@@ -55,9 +54,9 @@
 			</div>
 		</div>
 		
-		<?php include('inc/footer.php'); ?>
+		<? include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/footer.php" ); ?>
+		<? include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/scripts.php" ); ?>
 		
-		<?php include('inc/scripts.php'); ?>
 		<script>
 			var swiper = new Swiper('.swiper-container', {
 				nextButton: '.swiper-button-next',
