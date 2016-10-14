@@ -4,7 +4,7 @@
 	require $_SERVER[ "DOCUMENT_ROOT" ] . "/admin/classes/Produit.php";
 	require $_SERVER[ "DOCUMENT_ROOT" ] . "/admin/classes/Produit_image.php";
 	
-	$debug = 			true;
+	$debug = 			false;
 	$categorie = 		new Categorie();
 	$produit = 			new Produit();
 	$produit_image =	new Produit_image();
@@ -54,7 +54,7 @@
 				
 				
 				// ---- Affichage du contenu des catégories -------------------------- //
-				/*if ( !empty( $liste_categorie ) ) {
+				if ( !empty( $liste_categorie ) ) {
 					$i = 0;
 					echo "<div class='tabs-content'>\n";
 					
@@ -86,9 +86,12 @@
 											$nom = 			$_produit[ "nom" ];
 											$image_defaut = $produit_image->getImageDefaut( $id_produit, $debug );
 											
-											echo "	<div class='large-4 medium-4 small-12 columns'>\n";
-											echo "		<a href='/amenagement-detail.php?id=" . $id_produit . "' data-fancybox-group='amenagementbois' title=''><img src='/photos/produit/accueil" . $image_defaut[ "fichier" ] . "' title='" . $nom . "' /></a>\n";
-											echo "	</div>\n";
+											echo "<div class='large-4 medium-4 small-12 columns'>\n";
+											echo "	<figure>\n";
+											echo "		<a href='/realisation-detail.php?id=" . $id_produit . "'><img src='/photos/produit/realisation_liste" . $image_defaut[ "fichier" ] . "' title='" . $nom . "' /></a>\n";
+											echo "		<figcaption>" . $nom . "</figcaption>\n";
+											echo "	</figure>\n";
+											echo "</div>\n";
 										}
 										
 										echo "	<div style='clear:both;'></div>\n";
@@ -99,7 +102,7 @@
 							}
 						}
 						
-						// ---- Recherche & affichage des produits disponibles pour cette catégorie
+						// ---- Recherche & affichage des réalisations disponibles pour cette catégorie
 						if ( 1 == 1) {
 							unset( $recherche );
 							$recherche[ "id_categorie" ] = 	$_categorie[ "id" ];
@@ -114,9 +117,12 @@
 									$nom = 			$_produit[ "nom" ];
 									$image_defaut = $produit_image->getImageDefaut( $id_produit, $debug );
 									
-									echo "	<div class='large-4 medium-4 small-12 columns'>\n";
-									echo "		<a href='/amenagement-detail.php?id=" . $id_produit . "' data-fancybox-group='amenagementbois' title=''><img src='/photos/produit/accueil" . $image_defaut[ "fichier" ] . "' title='" . $nom . "' /></a>\n";
-									echo "	</div>\n";
+									echo "<div class='large-4 medium-4 small-12 columns'>\n";
+									echo "	<figure>\n";
+									echo "		<a href='/realisation-detail.php?id=" . $id_produit . "'><img src='/photos/produit/realisation_liste" . $image_defaut[ "fichier" ] . "' /></a>\n";
+									echo "		<figcaption>" . $nom . "</figcaption>\n";
+									echo "	</figure>\n";
+									echo "</div>\n";
 								}
 								
 								echo "	<div style='clear:both;'></div>\n";
@@ -130,12 +136,12 @@
 					}
 					
 					echo "</div>\n";
-				}*/
+				}
 				// ------------------------------------------------------------------- //
 				?>
 				
 				
-				<div class="large-4 medium-4 small-12 columns">
+				<!--<div class="large-4 medium-4 small-12 columns">
 					<figure>
 						<a href="img/reference-01.jpg" data-fancybox-group="realisations"><img src="img/reference-01.jpg" alt="" /></a>
 						<figcaption>Légende associée</figcaption>
@@ -171,7 +177,14 @@
 						<figcaption>Légende associée</figcaption>
 					</figure>
 				</div>
-			</div>-->
+				<div class="large-4 medium-4 small-12 columns">
+					<figure>
+						<a href="img/reference-01.jpg" data-fancybox-group="realisations"><img src="img/reference-01.jpg" alt="" /></a>
+						<figcaption>Légende associée</figcaption>
+					</figure>
+				</div>-->
+					
+			</div>
 		</div>
 		
 		<? include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/footer.php" ); ?>
@@ -183,5 +196,6 @@
 				$('nav ul li:nth-child(3)').addClass('active');		
 			});
 		</script>
+		
 	</body>
 </html>

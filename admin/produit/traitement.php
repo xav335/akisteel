@@ -77,9 +77,9 @@
 						$imageManager->imageResize( $source, $destination, 800, 600, null );
 						
 						// ---- Image de taille "grande" ----- //
-						$destination = $_SERVER['DOCUMENT_ROOT'] . '/photos/produit/accueil' . $filenameDest;
+						$destination = $_SERVER['DOCUMENT_ROOT'] . '/photos/produit/realisation_liste' . $filenameDest;
 						if ( $debug ) echo "--- destination : " . $destination . "<br>";
-						$imageManager->imageResize( $source, $destination, 319, 327, ZEBRA_IMAGE_CROP_CENTER );
+						$imageManager->imageResize( $source, $destination, 223, 299, ZEBRA_IMAGE_CROP_CENTER );
 						
 						// ---- Image de taille "vignette" --- //
 						$destination = $_SERVER['DOCUMENT_ROOT'] . '/photos/produit/vignette' . $filenameDest;

@@ -26,7 +26,6 @@
 			$description = 	$result[ 0 ][ "description" ];
 			$image[ 1 ] = 	$result[ 0 ][ "image" ];
 			$fichier_pdf = 	$result[ 0 ][ "fichier_pdf" ];
-			$accueil = 		( $result[ 0 ][ "accueil" ]=='1' ) ? "checked" : "";
 			$online = 		( $result[ 0 ][ "online" ]=='1' ) ? "checked" : "";
 			
 			$display_pdf = ( $fichier_pdf != '' ) ? "block" : "none";
@@ -52,7 +51,6 @@
 		$nom = 			null;
 		$description =	null;
 		$fichier_pdf = 	'';
-		$accueil = 		'0';
 		$online = 		'0';
 		
 		$display_pdf = "none";
@@ -132,11 +130,6 @@
 						</div>
 						
 						<div class="form-group" >
-							<label class="col-sm-2" for="titre">En page d'accueil :</label>
-							<input type="checkbox" name="accueil" value="1" <?=$accueil?>>
-						</div>
-						
-						<div class="form-group" >
 							<label class="col-sm-2" for="titre">En ligne :</label>
 							<input type="checkbox" name="online" value="1" <?=$online?>>
 						</div>
@@ -173,7 +166,7 @@
 								foreach( $liste_image as $_image ) {
 									
 									echo "<div class='col-md-3' style='text-align:center; margin-bottom:20px; border:0px solid red;'>\n";
-				            		echo "	<img src='/photos/produit/accueil" . $_image[ "fichier" ] . "' width='230' style='max-width:230px;'></a><br>\n";
+				            		echo "	<img src='/photos/produit/realisation_liste" . $_image[ "fichier" ] . "' width='223' style='max-width:223px;'></a><br>\n";
 				            		if ( $_image[ "defaut" ] == 'non' ) echo "	<input type='button' id='" . $_image[ "num_image" ] . "' value='Par défaut' class='par_defaut' />\n";
 				            		echo "	<input type='button' id='" . $_image[ "num_image" ] . "' value='Supprimer' class='supprimer_image_precise' />\n";
 									echo "</div>\n";
