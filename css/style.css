@@ -1,0 +1,28 @@
+.contact textarea {height:175px;resize:none;}
+.contact input.erreur, .contact textarea.erreur {
+	border:			2px solid #CC3300;
+	color:			#CC3300;
+}
+
+.wait { display:none; }
+#div_success {
+	max-width:		430px;
+	margin:			0 auto;
+	padding:		10px;
+	border: 		2px solid #178039;
+	margin-bottom: 	10px;
+}
+#div_success h3, #div_success p {
+	color: 			#178039;
+}
+
+#div_erreur {
+	max-width:		430px;
+	margin:			0 auto;
+	padding:		10px;
+	border: 		2px solid #A20109;
+	margin-bottom: 	10px;
+}
+#div_erreur h3, #div_erreur p {
+	color: 			#A20109;
+}
