@@ -62,9 +62,9 @@
 				<div class="swiper-container flex">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide" style="background-image:url('img/reference-01.jpg');"></div>
-						<div class="swiper-slide" style="background-image:url('img/reference-01.jpg');"></div>
-						<div class="swiper-slide" style="background-image:url('img/reference-01.jpg');"></div>
-						<div class="swiper-slide" style="background-image:url('img/reference-01.jpg');"></div>
+						<div class="swiper-slide" style="background-image:url('img/reference-02.jpg');"></div>
+						<div class="swiper-slide" style="background-image:url('img/reference-03.jpg');"></div>
+						<div class="swiper-slide" style="background-image:url('img/reference-04.jpg');"></div>
 					</div>
 					<!-- Add Arrows -->
 					<div class="swiper-button-next"></div>
@@ -80,6 +80,7 @@
 			var swiper = new Swiper('.swiper-container', {
 				nextButton: '.swiper-button-next',
 				prevButton: '.swiper-button-prev',
+				autoplay: 2000,
 				slidesPerView: 1,
 				paginationClickable: true,
 				spaceBetween: 0,
