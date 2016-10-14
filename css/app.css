@@ -110,6 +110,14 @@ footer img {max-width:250px;}
 
 .row form.row {margin:0 auto;max-width:430px;}
 
+hr {
+  height: 2px;
+  padding: 0;
+  color: #FFF;
+  background-color: #FFF;
+  border: 0;
+}
+
 [type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {height:auto;padding:5px;border:1px solid transparent;font-size:14px;font-family:inherit;box-shadow:none;margin:0 0 5px;}
 button, html input[type="button"], input[type="reset"], input[type="submit"] {width:100%;border:none;text-transform:uppercase;font-family:inherit;font-size:14px;color:#fff;background:#17356d;margin-bottom:10px;}
 button:hover, html input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {background:#2f6ddf;}
