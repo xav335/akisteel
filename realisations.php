@@ -29,7 +29,7 @@
 		
 		<? include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/header.php" ); ?>
 		
-		<div class="row fullwidth content">
+		<div class="row fullwidth content2">
 			<div class="row contenu-realisations">
 				<div class="large-12 columns">
 					<h1>Quelques unes de nos réalisations</h1>
@@ -192,7 +192,7 @@
 		
 		<script>
 			$(document).ready(function(){
-				$('.contenu-realisations a').fancybox();
+				//$('.contenu-realisations a').fancybox();
 				$('nav ul li:nth-child(3)').addClass('active');		
 			});
 		</script>

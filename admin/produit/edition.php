@@ -51,7 +51,7 @@
 		$nom = 			null;
 		$description =	null;
 		$fichier_pdf = 	'';
-		$online = 		'0';
+		$online = 		'checked';
 		
 		$display_pdf = "none";
 		$display_pdf_img = "block";

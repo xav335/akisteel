@@ -20,15 +20,19 @@
 			if ( strlen( $texte ) > 300 ) $texte = substr( $texte, 0, 300 ) . " ...";
 			$image = 		"/photos/news/accueil" . $result[ 0 ][ "image" ];
 			
-			$contenu_popup .= "<div class='large-6 medium-6 small-12 columns'>\n";
-			$contenu_popup .= "	<div class='text-popup'>\n";
-			$contenu_popup .= "		<p>" . $titre . "</p>\n";
-			$contenu_popup .= "		<p>" . $sous_titre . "</p>\n";
-			$contenu_popup .= "		<p>" . $texte . "<br><a href='actualites.php#" . $result[ 0 ][ "id_news" ] . "'>Lire la suite</a></p>\n";
-			$contenu_popup .= "	</div>\n";
-			$contenu_popup .= "</div>\n";
-			$contenu_popup .= "<div class='large-6 medium-6 small-12 columns'>\n";
-			$contenu_popup .= "	<img src='" . $image . "' alt='' />\n";
+// 			$contenu_popup .= "<div class='large-6 medium-6 small-12 columns'>\n";
+// 			$contenu_popup .= "	<div class='text-popup'>\n";
+// 			$contenu_popup .= "		<p>" . $titre . "</p>\n";
+// 			$contenu_popup .= "		<p>" . $sous_titre . "</p>\n";
+// 			$contenu_popup .= "		<p>" . $texte . "<br><a href='actualites.php#" . $result[ 0 ][ "id_news" ] . "'>Lire la suite</a></p>\n";
+// 			$contenu_popup .= "	</div>\n";
+// 			$contenu_popup .= "</div>\n";
+// 			$contenu_popup .= "<div class='large-6 medium-6 small-12 columns'>\n";
+// 			$contenu_popup .= "	<img src='" . $image . "' alt='' />\n";
+// 			$contenu_popup .= "</div>\n";
+			
+			$contenu_popup .= "<div class='large-12 medium-12 small-12 columns'>\n";
+			$contenu_popup .= "	<a href='http:\/\/www.akidoor.net' target='_blank'><img src='img/akidoor.png'  alt='' /></a>\n";
 			$contenu_popup .= "</div>\n";
 		}
 		// ------------------------------------------------- //

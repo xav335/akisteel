@@ -9,3 +9,11 @@
 		<script src="js/vendor/fancybox/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
 		<script src="js/vendor/fancybox/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
 		<script src="js/app.js"></script>
+		
+	<script>
+		
+		
+		$(document).foundation();
+	
+		
+	</script>
