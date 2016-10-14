@@ -102,7 +102,8 @@
 					</div>
 				</div>
 				
-				<div class="large-6 columns">
+				
+				
 					<h3>Descriptif</h3>
 					<p><?=$description?></p>
 					

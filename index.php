@@ -31,9 +31,7 @@
 // 			$contenu_popup .= "	<img src='" . $image . "' alt='' />\n";
 // 			$contenu_popup .= "</div>\n";
 			
-			$contenu_popup .= "<div class='large-12 medium-12 small-12 columns'>\n";
-			$contenu_popup .= "	<a href='http:\/\/www.akidoor.net' target='_blank'><img src='img/akidoor.png'  alt='' /></a>\n";
-			$contenu_popup .= "</div>\n";
+			
 		}
 		// ------------------------------------------------- //
 		
@@ -44,10 +42,14 @@
 			$image_droite = "http://www.placehold.it/302x310/EFEFEF/171717&text=Img droite";
 			$url_droite = "http://www.iconeo.fr";
 			
-			$contenu_popup .= "<div class='large-6 medium-6 small-12 columns'>\n";
-			$contenu_popup .= "	<a href='" . $url_gauche . "' target='_blank'><img src='" . $image_gauche . "' alt='' /></a>\n";
-			$contenu_popup .= "</div>\n";$contenu_popup .= "<div class='large-6 medium-6 small-12 columns'>\n";
-			$contenu_popup .= "	<a href='" . $url_droite . "' target='_blank'><img src='" . $image_droite . "' alt='' /></a>\n";
+// 			$contenu_popup .= "<div class='large-6 medium-6 small-12 columns'>\n";
+// 			$contenu_popup .= "	<a href='" . $url_gauche . "' target='_blank'><img src='" . $image_gauche . "' alt='' /></a>\n";
+// 			$contenu_popup .= "</div>\n";$contenu_popup .= "<div class='large-6 medium-6 small-12 columns'>\n";
+// 			$contenu_popup .= "	<a href='" . $url_droite . "' target='_blank'><img src='" . $image_droite . "' alt='' /></a>\n";
+// 			$contenu_popup .= "</div>\n";
+			
+			$contenu_popup .= "<div class='large-12 medium-12 small-12 columns'>\n";
+			$contenu_popup .= "	<a href='http:\/\/www.akidoor.net' target='_blank'><img src='img/akidoor.png'  alt='' /></a>\n";
 			$contenu_popup .= "</div>\n";
 		}
 		// ------------------------------------------------- //

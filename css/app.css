@@ -126,7 +126,11 @@ hr {
 .gallery-thumbs .swiper-slide-active {opacity: 1;}
 
 
-
+.vue-de-chantier2 {border-radius:50%;width:290px;height:290px;background:rgba(255,255,255,0.89);
+        position:absolute;z-index:100;left:50%;margin-left:95px;top:-140px;}
+.vue-de-chantier2:after  {content:url('../img/motif-bulle.svg');position:absolute;bottom:-7px;left:-3px;display:block;}
+.vue-de-chantier2 p {color:#17356d;font-size:24px;font-weight:lighter;text-transform:uppercase;line-height:30px;text-align:center;margin-bottom:0;}
+.vue-de-chantier2 p:first-line {font-weight:bold;}
 
 
 [type='text'], [type='password'], [type='date'], [type='datetime'], [type='datetime-local'], [type='month'], [type='week'], [type='email'], [type='number'], [type='search'], [type='tel'], [type='time'], [type='url'], [type='color'], textarea {height:auto;padding:5px;border:1px solid transparent;font-size:14px;font-family:inherit;box-shadow:none;margin:0 0 5px;}

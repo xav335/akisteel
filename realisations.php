@@ -32,7 +32,13 @@
 		<div class="row fullwidth content2">
 			<div class="row contenu-realisations">
 				<div class="large-12 columns">
-					<h1>Quelques unes de nos réalisations</h1>
+                    					<div class="vue-de-chantier2 flex">
+                    					<p>
+                    						Quelques<br/>
+                    						réalisations
+                    					</p>
+                    				</div>
+                    				
 				</div>
 				
 				<?
