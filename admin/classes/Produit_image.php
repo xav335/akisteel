@@ -114,7 +114,7 @@ class Produit_image extends StorageManager {
 		// ---- Suppression physique des fichiers ---- //
 		if ( 1 == 1 ) {
 			
-			$fichier_a_supprimer = $_SERVER['DOCUMENT_ROOT'] . "/photos/produit/accueil" . $data[ 0 ][ "fichier" ];
+			$fichier_a_supprimer = $_SERVER['DOCUMENT_ROOT'] . "/photos/produit/realisation_liste" . $data[ 0 ][ "fichier" ];
 			if ( file_exists( $fichier_a_supprimer ) ) {
 				if ( $debug ) echo "On supprime " . $fichier_a_supprimer . "<br>\n";
 				if ( !$debug ) unlink( $fichier_a_supprimer );

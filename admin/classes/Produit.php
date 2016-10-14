@@ -34,7 +34,6 @@ class Produit extends StorageManager {
 		$val[ "nom" ] = addslashes( $post[ "nom" ] );
 		$val[ "description" ] = addslashes( $post[ "description" ] );
 		$val[ "fichier_pdf" ] = addslashes( $post[ "fichier_pdf" ] );
-		$val[ "accueil" ] = ( $post[ "accueil" ] == '1' ) ? '1' : '0';
 		$val[ "online" ] = ( $post[ "online" ] == '1' ) ? '1' : '0';
 		
 		// ---- Modification -------- //
@@ -56,13 +55,12 @@ class Produit extends StorageManager {
 		
 		try {
 			$sql = "INSERT INTO  `product`
-				( `id_categorie`, `nom`, `description`, `fichier_pdf`, `accueil`, `online` )
+				( `id_categorie`, `nom`, `description`, `fichier_pdf`, `online` )
 				VALUES (
 				'" . $value[ "id_categorie" ] . "',
 				'" . $value[ "nom" ] . "',
 				'" . $value[ "description" ] ."',
 				'" . $value[ "fichier_pdf" ] ."',
-				'" . $value[ "accueil" ] . "',
 				'" . $value[ "online" ] . "'
 			);";
 			
@@ -98,7 +96,6 @@ class Produit extends StorageManager {
 			$sql .= " `nom` = '" . $value[ "nom" ] . "',";
 			$sql .= " `description` = '" . $value[ "description" ] . "',";
 			if ( $value[ "fichier_pdf" ] != '' ) $sql .= " `fichier_pdf` = '" . $value[ "fichier_pdf" ] . "',";
-			$sql .= " `accueil` = '" . $value[ "accueil" ] . "',";
 			$sql .= " `online` = '" . $value[ "online" ] . "'";
 			$sql .= " WHERE `id` = " . $value[ "id" ] . ";";
 			

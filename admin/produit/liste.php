@@ -100,7 +100,6 @@
 								<th class="col-md-2" style="">Catégorie</th>
 								<th class="col-md-5" style="">Description</th>
 								<th class="col-md-1" style="">Photo</th>
-								<th class="col-md-1" style="">Accueil</th>
 								<th class="col-md-1" style="">Online</th>
 								<th class="col-md-1" colspan="2" style="">Actions</th>
 							</tr>
@@ -118,19 +117,17 @@
 									// ---- Chargement de l'image par défaut
 									$image_defaut = $produit_image->getImageDefaut( $value[ "id" ], $debug );
 									
-									$classe_affichage = ( $i % 2 != 0 ) ? "info" : "";
-									$description = couper_correctement( $value[ "description" ], 50 );
+									$classe_affichage =	( $i % 2 != 0 ) ? "info" : "";
+									$description = 		couper_correctement( $value[ "description" ], 50 );
 									if ( strlen( $value[ "description" ] ) > 50 ) $description .= " ...";
-									$image_ok = ( $image_defaut[ "fichier" ] != '' ) ? 'check' : 'vide';
-									$accueil = ( $value[ "accueil" ] == '1' ) ? 'check' : 'vide';
-									$online = ( $value[ "online" ] == '1' ) ? 'check' : 'vide';
+									$image_ok = 		( $image_defaut[ "fichier" ] != '' ) ? 'check' : 'vide';
+									$online = 			( $value[ "online" ] == '1' ) ? 'check' : 'vide';
 									
 									echo "<tr class='" . $classe_affichage . "'>\n";
 									echo "	<td>" . $value[ "nom" ] . "</td>\n";
 									echo "	<td>" . $data[ 0 ][ "nom" ] . "</td>\n";
 									echo "	<td>" . $description . "</td>\n";
 									echo "	<td align='center'><img src='../img/" . $image_ok . ".png' width='30' ></td>\n";
-									echo "	<td align='center'><img src='../img/" . $accueil . ".png' width='30' ></td>\n";
 									echo "	<td align='center'><img src='../img/" . $online . ".png' width='30' ></td>\n";
 									echo "	<td><a href='./edition.php?id=" . $value[ "id" ] . "'><img src='../img/modif.png' width='30' alt='Modifier' ></a></td>\n";
 									echo "	<td>\n";
