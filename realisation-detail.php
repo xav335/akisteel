@@ -57,13 +57,13 @@
 		
 		<? include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/header.php" ); ?>
 	
-		<div class="row contenu">
+		<div class="row fullwidth content2">
+			<div class="row contenu-realisations">
 	
 			<div class="large-12 columns">
 				<h1><?php echo $nom?></h1>
 			</div>
 			
-			<div class="row">
 				<div class="large-6 columns">
 					
 					<div class="gallery-top">
@@ -73,7 +73,7 @@
 							// ---- Affichage des vignettes ------------------ //
 							if ( !empty( $liste_image ) ) {
 								foreach ( $liste_image as $_image ) { 
-									echo "<div class='swiper-slide'><a href='/photos/produit/normale" . $_image[ "fichier" ] . "' class='fancybox photo-principale' rel='offre'><img src='/photos/produit/accueil" . $_image[ "fichier" ] . "' alt='' /></a></div>\n";
+									echo "<div class='swiper-slide'><a href='/photos/produit/normale" . $_image[ "fichier" ] . "' class='fancybox photo-principale' rel='offre'><img src='/photos/produit/normale" . $_image[ "fichier" ] . "' alt='' /></a></div>\n";
 								}
 							}
 							// ----------------------------------------------- //
@@ -120,7 +120,6 @@
 					
 				</div>
 			</div>
-			
 		</div>
 	
 		<? include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/footer.php" ); ?>
@@ -128,7 +127,7 @@
 		
 		<script>
 			$(document).ready(function(){
-				$('.contenu-realisations a').fancybox();
+				//$('.contenu-realisations a').fancybox();
 				$('nav ul li:nth-child(3)').addClass('active');		
 			});
 		</script>
