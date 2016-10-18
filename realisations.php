@@ -10,6 +10,7 @@
 	$produit_image =	new Produit_image();
 	
 	$num_categorie = 	$_GET[ "nc" ];
+	$data_categorie = 	$categorie->load( $num_categorie, $debug );
 	
 	// ---- Liste des catégories de niveau 0 ------ //
 	if ( 1 == 1 ) {
@@ -17,11 +18,19 @@
 		$recherche[ "id_parent" ] = 0;
 		$recherche[ "order_by" ] = 	"ordre_affichage";
 		$liste_categorie = $categorie->getListe( $recherche, $debug );
+		
+		// ---- Si pas encore de catégorie sélectionnée, on prend la 1ier
+		if ( empty( $data_categorie ) ) {
+			if ( !empty( $liste_categorie ) ) {
+				$num_categorie = $liste_categorie[ 0 ][ "id" ];
+				$data_categorie = $categorie->load( $num_categorie, $debug );
+			}
+		}
 	}
 	// -------------------------------------------- //
 	
 	// ---- Sous catégories & réalisations d'une catégorie parent sélectionnée
-	if ( $data_categorie = $categorie->load( $num_categorie, $debug ) ) {
+	if ( !empty( $data_categorie ) ) {
 		
 		// ---- Liste des sous catégories --------- //
 		if ( 1 == 1 ) {
@@ -68,13 +77,11 @@
 				<?
 				// ---- Affichage des catégories principales ------------------------- //
 				if ( !empty( $liste_categorie ) ) {
-					$i = 0;
 					echo "<ul class='tabs' data-tab>\n";
 					
 					foreach ( $liste_categorie as $_categorie ) {
-						$actif = ( $i == $num_categorie ) ? "active" : "";
+						$actif = ( $_categorie[ "id" ] == $num_categorie ) ? "active" : "";
 						echo "<li class='tab-title " . $actif . "'><a href='./realisations.php?nc=" . $_categorie[ "id" ] . "'>" . $_categorie[ "nom" ] . "</a></li>\n";
-						$i++;
 					}
 					
 					echo "</ul>\n";
