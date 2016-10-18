@@ -24,7 +24,13 @@
 	// ---- Liste des produits -------------------- //
 	if ( 1 == 1 ) {
 		unset( $recherche );
-		if ( $id_categorie != '' ) $recherche[ "id_categorie" ] = $id_categorie;
+		if ( $id_categorie != '' ) {
+			$recherche[ "champ" ] = "product.*";
+			$recherche[ "where" ] = " INNER JOIN catproduct ON catproduct.id = product.id_categorie";
+			$recherche[ "where" ] .= " WHERE id_categorie = " . $id_categorie;
+			$recherche[ "where" ] .= " OR id_parent = " . $id_categorie;
+			$recherche[ "where" ] .= " ORDER BY id_parent, id_categorie, product.nom";
+		}
 		$liste_produit = $produit->getListe( $recherche, $debug );
 	}
 	// -------------------------------------------- //

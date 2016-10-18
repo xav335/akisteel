@@ -212,7 +212,7 @@ class Produit extends StorageManager {
 			}
 			
 			$order_by = ( $tab[ "order_by" ] != "" ) ? $tab[ "order_by" ] : "nom";
-			$sens = ( $tab[ "sens" ] != "" ) ? $tab[ "sens" ] : "ASC";
+			$sens = 	( $tab[ "sens" ] != "" ) ? $tab[ "sens" ] : "ASC";
 			$requete .= " ORDER BY " . $order_by . " " . $sens;
 		}
 		else $requete .= $tab[ "where" ];

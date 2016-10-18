@@ -18,7 +18,7 @@
 		// ---- Le produit DOIT être en ligne pour être affiché ici!
 		if ( $result[ 0 ][ "online" ] == "non" ) {
 			if ( $debug ) echo "1 - Produit OFFLINE!<br>";
-			if ( !$debug ) header( "Location: /amenagements.php" );
+			if ( !$debug ) header( "Location: /realisations.php" );
 			exit();
 		}
 		
@@ -60,65 +60,67 @@
 		<div class="row fullwidth content2">
 			<div class="row contenu-realisations">
 	
-			<div class="large-12 columns">
-				<h1><?php echo $nom?></h1>
-			</div>
-			
-				<div class="large-6 columns">
-					
-					<div class="gallery-top">
-						<div class="swiper-wrapper">
-							
-							<?
-							// ---- Affichage des vignettes ------------------ //
-							if ( !empty( $liste_image ) ) {
-								foreach ( $liste_image as $_image ) { 
-									echo "<div class='swiper-slide'><a href='/photos/produit/normale" . $_image[ "fichier" ] . "' class='fancybox photo-principale' rel='offre'><img src='/photos/produit/normale" . $_image[ "fichier" ] . "' alt='' /></a></div>\n";
-								}
-							}
-							// ----------------------------------------------- //
-							?>
-						
-						</div>
-						
-						<!-- Add Arrows -->
-						<div class="swiper-button-next"></div>
-						<div class="swiper-button-prev"></div>
-					</div>
-					<div class="gallery-thumbs">
-						<div class="swiper-wrapper">
-							
-							<?
-							// ---- Affichage des vignettes ------------------ //
-							if ( !empty( $liste_image ) ) {
-								foreach ( $liste_image as $_image ) { 
-									echo "<div class='swiper-slide'><img src='/photos/produit/vignette" . $_image[ "fichier" ] . "' alt='' /></div>\n";
-								}
-							}
-							// ----------------------------------------------- //
-							?>
-							
-						</div>
-					</div>
+				<div class="large-12 columns">
+					<h1><?=$nom?></h1>
 				</div>
 				
-				
-				
-					<h3>Descriptif</h3>
-					<p><?=$description?></p>
+				<div class="row">
+					<div class="large-6 columns">
+						
+						<div class="gallery-top">
+							<div class="swiper-wrapper">
+								
+								<?
+								// ---- Affichage des vignettes ------------------ //
+								if ( !empty( $liste_image ) ) {
+									foreach ( $liste_image as $_image ) { 
+										echo "<div class='swiper-slide'><a href='/photos/produit/normale" . $_image[ "fichier" ] . "' class='fancybox photo-principale' rel='offre'><img src='/photos/produit/normale" . $_image[ "fichier" ] . "' alt='' /></a></div>\n";
+									}
+								}
+								// ----------------------------------------------- //
+								?>
+							
+							</div>
+							
+							<!-- Add Arrows -->
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+						
+						<div class="gallery-thumbs">
+							<div class="swiper-wrapper">
+								
+								<?
+								// ---- Affichage des vignettes ------------------ //
+								if ( !empty( $liste_image ) ) {
+									foreach ( $liste_image as $_image ) { 
+										echo "<div class='swiper-slide'><img src='/photos/produit/vignette" . $_image[ "fichier" ] . "' alt='' /></div>\n";
+									}
+								}
+								// ----------------------------------------------- //
+								?>
+								
+							</div>
+						</div>
+					</div>
 					
-					<?
-					// ---- PDF disponible --------------- //
-					if ( $fichier_pdf != '' ) {
-						echo "<h3>PDF disponible</h3>\n";
-						echo "<p>\n";
-						echo "	Télécharger ici notre fichier PDF :\n";
-						echo "	<a href='/fichier/pdf" . $fichier_pdf . "' target='_blank' class='pdf'></a>\n";
-						echo "</p>\n";
-					}
-					// ----------------------------------- //
-					?>
+					<div class="large-6 columns">
+						<h3>Descriptif</h3>
+						<p><?=$description?></p>
+						
+						<?
+						// ---- PDF disponible --------------- //
+						if ( $fichier_pdf != '' ) {
+							echo "<h3>PDF disponible</h3>\n";
+							echo "<p>\n";
+							echo "	Télécharger ici notre fichier PDF :\n";
+							echo "	<a href='/fichier/pdf" . $fichier_pdf . "' target='_blank' class='pdf'></a>\n";
+							echo "</p>\n";
+						}
+						// ----------------------------------- //
+						?>
 					
+					</div>
 				</div>
 			</div>
 		</div>
@@ -128,8 +130,25 @@
 		
 		<script>
 			$(document).ready(function(){
+				
 				//$('.contenu-realisations a').fancybox();
-				$('nav ul li:nth-child(3)').addClass('active');		
+				$('nav ul li:nth-child(3)').addClass('active');	
+				
+				var galleryTop = new Swiper('.gallery-top', {
+			        nextButton: '.swiper-button-next',
+			        prevButton: '.swiper-button-prev',
+			        spaceBetween: 0,
+			    });
+			    var galleryThumbs = new Swiper('.gallery-thumbs', {
+			        spaceBetween: 10,
+			        centeredSlides: true,
+			        slidesPerView: 'auto',
+			        touchRatio: 0.2,
+			        slideToClickedSlide: true
+			    });
+			    galleryTop.params.control = galleryThumbs;
+			    galleryThumbs.params.control = galleryTop;
+			    	
 			});
 		</script>
 		

@@ -256,9 +256,9 @@ class Categorie extends StorageManager {
 		//print_pre( $_categorie );
 		
 		if ( !empty( $_categorie ) ) {
-			$decalage = ( $_categorie[ "id_parent" ] == 0 ) ? "" : "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
-			$classe_affichage = ( $_categorie[ "id_parent" ] == 0 ) ? 'info' : 'success';
-			$btn_visualisation = ( $_categorie[ "id_parent" ] == 0 ) 
+			$decalage = 			( $_categorie[ "id_parent" ] == 0 ) ? "" : "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+			$classe_affichage = 	( $_categorie[ "id_parent" ] == 0 ) ? "info" : "success";
+			$btn_visualisation = 	( $_categorie[ "id_parent" ] == 0 ) 
 				? "&nbsp;" 
 				: "<a href='/admin/produit/liste.php?id_categorie=" . $_categorie[ "id" ] . "'><img src='/admin/img/eye.png' width='30' title='Voir tous les produits de cette catégorie' ></a>";
 			

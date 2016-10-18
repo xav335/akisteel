@@ -4,8 +4,8 @@
 	require( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/inc.config.php" );
 	require $_SERVER[ "DOCUMENT_ROOT" ] . "/admin/classes/Categorie.php";
 	
-	$debug = false;
-	$categorie = new Categorie();
+	$debug = 		false;
+	$categorie = 	new Categorie();
 	
 	$id = $_GET[ "id" ];
 	
@@ -15,6 +15,7 @@
 	if ( 1 == 1 ) {
 		unset( $recherche );
 		$recherche[ "id_parent" ] = 0;
+		$recherche[ "order_by" ] = 	"ordre_affichage";
 		$liste_categorie = $categorie->getListe( $recherche, $debug );
 	}
 	// -------------------------------------------- //

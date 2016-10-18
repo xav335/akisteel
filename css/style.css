@@ -26,3 +26,6 @@
 #div_erreur h3, #div_erreur p {
 	color: 			#A20109;
 }
+
+.pdf {display:inline-block;vertical-align:-13px;width:28px;height:35px;background:url('/img/pdf.png') top center no-repeat;}
+.pdf:hover {background-position:bottom center;}
