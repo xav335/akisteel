@@ -118,7 +118,7 @@ hr {
   border: 0;
 }
 .gallery-top, .gallery-thumbs {overflow:hidden;}
-.gallery-top {width:100%;}
+.gallery-top {position:relative; width:100%;}
 .gallery-top .swiper-slide {background-size:cover;background-position:center center;
         background-repeat:no-repeat;min-height:327px;padding:0;display:block;text-align:center;}
 .gallery-thumbs {height:20%;box-sizing:border-box;padding:10px 0;}
