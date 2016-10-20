@@ -74,7 +74,7 @@
 								// ---- Affichage des vignettes ------------------ //
 								if ( !empty( $liste_image ) ) {
 									foreach ( $liste_image as $_image ) { 
-										echo "<div class='swiper-slide'><a href='/photos/produit/normale" . $_image[ "fichier" ] . "' class='fancybox photo-principale' rel='offre'><img src='/photos/produit/realisation_liste" . $_image[ "fichier" ] . "' alt='' /></a></div>\n";
+										echo "<div class='swiper-slide'><a href='/photos/produit/normale" . $_image[ "fichier" ] . "' class='fancybox photo-principale' rel='offre'><img src='/photos/produit/normale" . $_image[ "fichier" ] . "' alt='' /></a></div>\n";
 									}
 								}
 								// ----------------------------------------------- //

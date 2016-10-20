@@ -74,7 +74,7 @@
 						// ---- Image de taille "normale" ---- //
 						$destination = $_SERVER['DOCUMENT_ROOT'] . '/photos/produit/normale' . $filenameDest;
 						if ( $debug ) echo "--- destination : " . $destination . "<br>";
-						$imageManager->imageResize( $source, $destination, 1024, 768, null );
+						$imageManager->imageResize( $source, $destination, 800, 600, null );
 						
 						// ---- Image de taille "grande" ----- //
 						$destination = $_SERVER['DOCUMENT_ROOT'] . '/photos/produit/realisation_liste' . $filenameDest;
