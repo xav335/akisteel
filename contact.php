@@ -6,7 +6,7 @@
 	
 	$contact = 				new Contact();
 	
-	$debug = 				false;
+	$debug = 				true;
 	$mon_action = 			$_POST[ "mon_action" ];
 	$anti_spam = 			$_POST[ "as" ];
 	//print_pre( $_POST );
@@ -53,7 +53,7 @@
 			$_to = ( MAIL_TEST != '' )
 		    	? MAIL_TEST
 		    	: MAIL_CONTACT;
-			//echo "Envoi du message à : " . $_to . "<br><br>";
+			if ( $debug ) echo "Envoi du message à : " . $_to . "<br><br>";
 			
 			$message = "Bonjour,<br><br>";
 			$message .= "La personne suivante a rempli le formulaire de contact de votre site :<br>";
@@ -66,6 +66,7 @@
 			if ( $debug ) echo $message;
 			
 			if ( !$debug ) $retour = mail( $_to, $sujet, stripslashes( $message ), $entete );
+			$retour = mail( $_to, $sujet, stripslashes( $message ), $entete );
 			//exit();
 			
 			$affichage_success = ( $retour ) ? "" : "wait";
@@ -122,7 +123,7 @@
 						<input type="hidden" name="as" value="" />
 						
 						<div class="large-6 medium-12 columns">
-							<input type="text" name="prenom" id="prenom" placeholder="Votre prénom" class="erreur" />						
+							<input type="text" name="prenom" id="prenom" placeholder="Votre prénom" />						
 						</div>
 						<div class="large-6 medium-12 columns">
 							<input type="text" name="nom" id="nom" placeholder="Votre nom" />
