@@ -168,7 +168,8 @@
 		<? include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/footer.php" ); ?>
 		<? include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/scripts.php" ); ?>
 		
-		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+		
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCg5uYfOCVANlamT61wSw0VF8necpQVVMo&v=3.exp"></script>
 		<script>
 			
 			$(document).ready(function(){
@@ -184,7 +185,7 @@
 						mapTypeId: google.maps.MapTypeId.ROADMAP,
 						mapTypeControl: false,
 						zoom: 12,
-						zoomControl: false,
+						zoomControl: true,
 						panControl: false,
 						streetViewControl: false,
 						scaleControl: false,
@@ -258,6 +259,11 @@
 						icon: icon,
 						title: 'AKISTEEL'
 					});
+					 marker.addListener('click', function() {
+					 //window.location.href = 'http://tinyurl.com/zsf4gqo';
+					 window.open('https://goo.gl/04RSFv','_blank');
+					 });
+				
 				}
 				
 				google.maps.event.addDomListener(window, 'load', initialize);

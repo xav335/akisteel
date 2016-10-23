@@ -23,7 +23,8 @@
 						<p>
 						  <strong>AKISTEEL</strong> s'engage à vous offrir des <strong>solutions complètes et adaptées</strong> à vos différents besoins.</p>
                             <p>Confiez- nous vos projets, nous mettrons tout en œuvre pour les mener à bien.</p>
-                           <p> N'hésitez pas à nous contacter pour devis ou informations complémentaires...
+<br>
+                           <p> N'hésitez pas à <a href="contact.php">nous contacter</a> pour devis ou informations complémentaires...
                             </p>
 					</div>
 				</div>

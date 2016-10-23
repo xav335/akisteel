@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.38, for debian-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.44, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: akisteel
 -- ------------------------------------------------------
--- Server version	5.5.38-0+wheezy1
+-- Server version	5.5.44-0+deb8u1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -64,7 +64,7 @@ CREATE TABLE `catproduct` (
 
 LOCK TABLES `catproduct` WRITE;
 /*!40000 ALTER TABLE `catproduct` DISABLE KEYS */;
-INSERT INTO `catproduct` VALUES (41,41,'Protection bois  ','/_MG_5081-41.jpg',1),(43,43,' ','/_MG_5255-43.jpg',2),(54,0,'Balustres','',2),(57,56,'amenagements','',1),(60,60,'Protection bois  ','',1),(65,65,'Protection bois  ','',1),(66,66,'Protection aluminium  ','',2),(68,81,'Balisage ','',2),(69,65,'Protection bois ','',1),(73,71,'Protection en Contre Plaqué   ','',1),(75,75,'Protection aluminium  ','',6),(77,75,'Habillage bois  ','',1),(79,79,'Protection bois ','',5),(80,0,'Escaliers','',1),(81,81,'Gyrophare et rampe  ','',5),(82,82,'Marchepied ','',4),(83,83,'Plastification et résine étanche ','',5),(84,84,'Transformation VP/VU','',8),(85,0,'Divers','',4),(86,0,'Portails','',3),(94,94,'Produits','',13),(97,97,'Balisage ','',3),(98,87,'Protection aluminium','',1),(99,80,'Escaliers droits','',1),(100,80,'En colimaçon','',2);
+INSERT INTO `catproduct` VALUES (41,41,'Protection bois  ','/_MG_5081-41.jpg',1),(43,43,' ','/_MG_5255-43.jpg',2),(54,0,'Balustres','',2),(57,56,'amenagements','',1),(60,60,'Protection bois  ','',1),(65,65,'Protection bois  ','',1),(66,66,'Protection aluminium  ','',2),(68,81,'Balisage ','',2),(69,65,'Protection bois ','',1),(73,71,'Protection en Contre Plaqué   ','',1),(75,75,'Protection aluminium  ','',6),(77,75,'Habillage bois  ','',1),(79,79,'Protection bois ','',5),(80,0,'Escaliers','',1),(81,81,'Gyrophare et rampe  ','',5),(82,82,'Marchepied ','',4),(83,83,'Plastification et résine étanche ','',5),(84,84,'Transformation VP/VU','',8),(85,0,'Divers','',3),(94,94,'Produits','',13),(97,97,'Balisage ','',3),(98,87,'Protection aluminium','',1),(99,80,'Escaliers droits','',1),(100,80,'Escaliers en colimaçon','',2);
 /*!40000 ALTER TABLE `catproduct` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -204,7 +204,7 @@ CREATE TABLE `news` (
 
 LOCK TABLES `news` WRITE;
 /*!40000 ALTER TABLE `news` DISABLE KEYS */;
-INSERT INTO `news` VALUES (3,'2016-10-27 00:00:00','Notre site est en ligne','Triouvez ici toutes nos réalisations et nos actus','Lorem ipsum dolor sit amet, \r\n\r\nconsectetur adipiscing elit. Maecenas viverra eleifend lacus eu porttitor. \r\nCurabitur tempus libero eget tortor scelerisque, nec accumsan sem consequat. \r\nIn tristique quis risus ac maximus. In posuere nunc ut diam sollicitudin commodo. Nullam laoreet nisl a elementum placerat. Pellentesque iaculis rutrum ipsum ac vestibulum. Fusce at neque vel justo semper auctor. Vestibulum porta mi vel lacus tristique porta. Integer gravida bibendum ante, vitae scelerisque massa elementum at. Nullam eget risus ac lorem luctus auctor. ','/internet_company1-3.jpg',0,1),(4,'2016-10-20 00:00:00','Nouvelle réalisation','Grosse ouevre','Mauris at lacus mi. Etiam pretium commodo diam, faucibus congue nibh aliquet et. Cras ullamcorper ullamcorper elit, in convallis nulla pretium id. Nam lectus mi, gravida eu vehicula congue, accumsan vitae ex. Aenean aliquam at urna at convallis. Donec libero felis, condimentum non mi sit amet, bibendum molestie ante. Nunc blandit ac magna vel mattis. Ut eget mi odio. Vestibulum ultricies odio ut rhoncus mollis. Morbi sit amet porta diam. Sed non leo aliquet ex rutrum vulputate. ','/IMG_8422-4.jpg',0,1),(5,'2016-10-02 00:00:00','De belles soudures','escalier inox','blabla actu','/ESCALIERS_108-5.jpg',0,1);
+INSERT INTO `news` VALUES (3,'2016-10-27 00:00:00','Notre site est en ligne','Trouvez ici toutes nos réalisations et nos actus','Notre nouveau site internet afin que vous puissiez trouvez ici l\'ensemble de nos prestations et de nos actus.','/internet_company1-3.jpg',0,1),(4,'2016-10-20 00:00:00','Nouvelle réalisation','Immeuble 3 étages','Réalisation imposante','/IMG_8422-4.jpg',0,1);
 /*!40000 ALTER TABLE `news` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -286,7 +286,7 @@ CREATE TABLE `product` (
 
 LOCK TABLES `product` WRITE;
 /*!40000 ALTER TABLE `product` DISABLE KEYS */;
-INSERT INTO `product` VALUES (1,99,'Support spécial','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque quis sagittis nulla. Fusce viverra mauris erat, cursus tincidunt sem convallis lacinia. Sed vestibulum nibh odio, quis condimentum turpis convallis a. Suspendisse ex augue, lobortis ac libero a, ullamcorper varius felis. Curabitur ut orci ut odio porta feugiat nec ut ex. Nam a molestie orci. Sed sagittis rhoncus eleifend. Praesent eros sapien, malesuada consequat consectetur at, tempor nec nulla. Sed luctus dui ac auctor bibendum. Sed vehicula massa id dui congue, id bibendum erat malesuada. Aliquam libero dolor, ultricies quis nulla a, accumsan scelerisque magna. Nulla porttitor, lectus a eleifend dapibus, sem velit ultricies diam, et congue justo leo vitae tortor. Nulla at metus commodo, feugiat turpis sed, commodo mi. Praesent vel cursus turpis, eu venenatis dui. Suspendisse semper mauris ut tellus finibus tristique. ','','1'),(2,100,'Escalier en colimaçon','réalisation top','','1'),(3,80,'Escalier droit',' ','/ESCALIERS_106-3.jpg','1'),(4,54,'Balustre',' ','','1'),(5,54,'balustre',' ','','1'),(6,99,'beau design',' ','','1'),(7,99,'belles soudures',' ','','1'),(8,99,'fabrication',' ','','1');
+INSERT INTO `product` VALUES (1,85,'Support spécial',' ','','1'),(2,100,'Escalier en colimaçon','réalisation top','','1'),(3,99,'Escalier droit',' ','/ESCALIERS_106-3.jpg','1'),(4,54,'Balustre',' ','','1'),(5,54,'balustre',' ','','1'),(6,99,'beau design',' ','','1'),(7,99,'belles soudures',' ','','1'),(8,85,'fabrication',' ','','1');
 /*!40000 ALTER TABLE `product` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -303,7 +303,7 @@ CREATE TABLE `product_image` (
   `fichier` varchar(100) NOT NULL,
   `defaut` enum('oui','non') NOT NULL DEFAULT 'non',
   PRIMARY KEY (`num_image`)
-) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -312,7 +312,7 @@ CREATE TABLE `product_image` (
 
 LOCK TABLES `product_image` WRITE;
 /*!40000 ALTER TABLE `product_image` DISABLE KEYS */;
-INSERT INTO `product_image` VALUES (10,1,'/be_ce_de_asques_003-1.jpg','oui'),(11,2,'/Carvalho_sci_Madazo_008-2.jpg','oui'),(12,2,'/Carvalho_sci_Madazo_012-2.jpg','non'),(13,2,'/Carvalho_sci_Madazo_011-2.jpg','non'),(15,3,'/ESCALIERS_103-3.jpg','oui'),(16,3,'/ESCALIERS_108-3.jpg','non'),(17,3,'/ESCALIERS_106-3.jpg','non'),(18,4,'/IMG_8421-4.jpg','oui'),(19,4,'/IMG_8422-4.jpg','non'),(20,5,'/berdeaux_perigueux_lacanau_008-5.jpg','oui'),(21,6,'/ESCALIERS_108-6.jpg','oui'),(22,7,'/ESCALIERS_105-7.jpg','oui'),(23,8,'/ESCALIERS_106-8.jpg','oui'),(24,3,'/398-3.jpg','non');
+INSERT INTO `product_image` VALUES (18,4,'/IMG_8421-4.jpg','oui'),(19,4,'/IMG_8422-4.jpg','non'),(25,5,'/berdeaux_perigueux_lacanau_008-5.jpg','oui'),(26,6,'/berdeaux_perigueux_lacanau_005-6.jpg','oui'),(27,7,'/ESCALIERS_104-7.jpg','oui'),(28,7,'/ESCALIERS_048-7.jpg','non'),(29,7,'/ESCALIERS_049-7.jpg','non'),(30,7,'/ESCALIERS_050-7.jpg','non'),(31,3,'/ESCALIERS_103-3.jpg','oui'),(32,8,'/be_ce_de_asques_003-8.jpg','oui'),(33,1,'/berdeaux_perigueux_lacanau_003-1.jpg','oui'),(34,1,'/berdeaux_perigueux_lacanau_002-1.jpg','non'),(35,1,'/berdeaux_perigueux_lacanau_004-1.jpg','non'),(36,2,'/ESCALIERS_044-2.jpg','oui'),(37,2,'/ESCALIERS_045-2.jpg','non'),(38,2,'/ESCALIERS_047-2.jpg','non');
 /*!40000 ALTER TABLE `product_image` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -325,4 +325,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-10-21  9:43:54
+-- Dump completed on 2016-10-23 15:44:57
