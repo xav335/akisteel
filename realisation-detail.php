@@ -65,26 +65,26 @@
 				</div>
 				
 				<div class="row">
-					<div class="large-6 columns">
+					<div class="large-7 columns">
 						
 						<div class="gallery-top">
 							<div class="swiper-wrapper">
-								
-								<?
-								// ---- Affichage des vignettes ------------------ //
-								if ( !empty( $liste_image ) ) {
-									foreach ( $liste_image as $_image ) { 
-										echo "<div class='swiper-slide'><a href='/photos/produit/normale" . $_image[ "fichier" ] . "' class='fancybox photo-principale' rel='offre'><img src='/photos/produit/realisation_liste" . $_image[ "fichier" ] . "' alt='' /></a></div>\n";
-									}
-								}
-								// ----------------------------------------------- //
-								?>
+								<!-- // ---- Affichage des vignettes ------------------ //  -->
+								<?php if ( !empty( $liste_image ) ): ?>
+									<?php foreach ( $liste_image as $_image ) : ?>
+										<div class='swiper-slide'>
+										  <a href="<?php echo '/photos/produit/normale'. $_image[ 'fichier' ] ?>" class="fancybox photo-principale" rel="offre">
+										      <img src="<?php echo '/photos/produit/realisation_liste'. $_image[ 'fichier' ] ?>"  alt="" />
+										  </a>
+										 </div>";
+									<?php endforeach; ?>
+								<?php endif; ?>
 							
 							</div>
 							
 							<!-- Add Arrows -->
-							<div class="swiper-button-next"></div>
-							<div class="swiper-button-prev"></div>
+						<!-- <div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div> -->	
 						</div>
 						
 						<div class="gallery-thumbs">
@@ -104,16 +104,18 @@
 						</div>
 					</div>
 					
-					<div class="large-6 columns">
+					<div class="large-5 columns">
+					   <?php if (!empty(trim($description))): ?>
 						<h3>Descriptif</h3>
 						<p><?=$description?></p>
+						<?php endif;?>
 						
 						<?
 						// ---- PDF disponible --------------- //
 						if ( $fichier_pdf != '' ) {
-							echo "<h3>PDF disponible</h3>\n";
+							echo "<h3>Ficher Technique</h3>\n";
 							echo "<p>\n";
-							echo "	Télécharger ici notre fichier PDF :\n";
+							echo "	Télécharger le fichier PDF :\n";
 							echo "	<a href='/fichier/pdf" . $fichier_pdf . "' target='_blank' class='pdf'></a>\n";
 							echo "</p>\n";
 						}

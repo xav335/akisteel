@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.6.21, for osx10.6 (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.38, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: akisteel
 -- ------------------------------------------------------
--- Server version	5.6.21
+-- Server version	5.5.38-0+wheezy1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -64,7 +64,7 @@ CREATE TABLE `catproduct` (
 
 LOCK TABLES `catproduct` WRITE;
 /*!40000 ALTER TABLE `catproduct` DISABLE KEYS */;
-INSERT INTO `catproduct` VALUES (41,41,'Protection bois  ','/_MG_5081-41.jpg',1),(43,43,' ','/_MG_5255-43.jpg',2),(54,0,'Balustres','',2),(57,56,'amenagements','',1),(60,60,'Protection bois  ','',1),(65,65,'Protection bois  ','',1),(66,66,'Protection aluminium  ','',2),(68,81,'Balisage ','',2),(69,65,'Protection bois ','',1),(73,71,'Protection en Contre Plaqué   ','',1),(75,75,'Protection aluminium  ','',6),(77,75,'Habillage bois  ','',1),(79,79,'Protection bois ','',5),(80,0,'Escaliers','',1),(81,81,'Gyrophare et rampe  ','',5),(82,82,'Marchepied ','',4),(83,83,'Plastification et résine étanche ','',5),(84,84,'Transformation VP/VU','',8),(85,0,'Divers','',8),(86,0,'Portails','',6),(94,94,'Produits','',13),(97,97,'Balisage ','',3),(98,87,'Protection aluminium','',1),(99,80,'Escaliers droits','',1),(100,80,'En colimaçon','',2);
+INSERT INTO `catproduct` VALUES (41,41,'Protection bois  ','/_MG_5081-41.jpg',1),(43,43,' ','/_MG_5255-43.jpg',2),(54,0,'Balustres','',2),(57,56,'amenagements','',1),(60,60,'Protection bois  ','',1),(65,65,'Protection bois  ','',1),(66,66,'Protection aluminium  ','',2),(68,81,'Balisage ','',2),(69,65,'Protection bois ','',1),(73,71,'Protection en Contre Plaqué   ','',1),(75,75,'Protection aluminium  ','',6),(77,75,'Habillage bois  ','',1),(79,79,'Protection bois ','',5),(80,0,'Escaliers','',1),(81,81,'Gyrophare et rampe  ','',5),(82,82,'Marchepied ','',4),(83,83,'Plastification et résine étanche ','',5),(84,84,'Transformation VP/VU','',8),(85,0,'Divers','',4),(86,0,'Portails','',3),(94,94,'Produits','',13),(97,97,'Balisage ','',3),(98,87,'Protection aluminium','',1),(99,80,'Escaliers droits','',1),(100,80,'En colimaçon','',2);
 /*!40000 ALTER TABLE `catproduct` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -89,7 +89,7 @@ CREATE TABLE `contact` (
   `fromgoldbook` tinyint(4) NOT NULL DEFAULT '0',
   `fromcontact` tinyint(4) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -98,6 +98,7 @@ CREATE TABLE `contact` (
 
 LOCK TABLES `contact` WRITE;
 /*!40000 ALTER TABLE `contact` DISABLE KEYS */;
+INSERT INTO `contact` VALUES (1,'fránck','l\'anglé','1, Rue du l\'oùp','33000','bdx','franck_langle@hotmail.fr','0650735822','c\'est mon test\r\nJ\'ai sauté une ligne...\r\n\r\nF.',1,0,1);
 /*!40000 ALTER TABLE `contact` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -203,7 +204,7 @@ CREATE TABLE `news` (
 
 LOCK TABLES `news` WRITE;
 /*!40000 ALTER TABLE `news` DISABLE KEYS */;
-INSERT INTO `news` VALUES (3,'2016-10-27 00:00:00','Notre site est en ligne','Triouvez ici toutes nos réalisations et nos actus','Lorem ipsum dolor sit amet, \r\n\r\nconsectetur adipiscing elit. Maecenas viverra eleifend lacus eu porttitor. \r\nCurabitur tempus libero eget tortor scelerisque, nec accumsan sem consequat. \r\nIn tristique quis risus ac maximus. In posuere nunc ut diam sollicitudin commodo. Nullam laoreet nisl a elementum placerat. Pellentesque iaculis rutrum ipsum ac vestibulum. Fusce at neque vel justo semper auctor. Vestibulum porta mi vel lacus tristique porta. Integer gravida bibendum ante, vitae scelerisque massa elementum at. Nullam eget risus ac lorem luctus auctor. ','/internet_company1-3.jpg',1,1),(4,'2016-10-20 00:00:00','Nouvelle réalisation','Grosse ouevre','Mauris at lacus mi. Etiam pretium commodo diam, faucibus congue nibh aliquet et. Cras ullamcorper ullamcorper elit, in convallis nulla pretium id. Nam lectus mi, gravida eu vehicula congue, accumsan vitae ex. Aenean aliquam at urna at convallis. Donec libero felis, condimentum non mi sit amet, bibendum molestie ante. Nunc blandit ac magna vel mattis. Ut eget mi odio. Vestibulum ultricies odio ut rhoncus mollis. Morbi sit amet porta diam. Sed non leo aliquet ex rutrum vulputate. ','/IMG_8422-4.jpg',1,1),(5,'2016-10-02 00:00:00','De belles soudures','escalier inox','blabla actu','/ESCALIERS_108-5.jpg',1,1);
+INSERT INTO `news` VALUES (3,'2016-10-27 00:00:00','Notre site est en ligne','Triouvez ici toutes nos réalisations et nos actus','Lorem ipsum dolor sit amet, \r\n\r\nconsectetur adipiscing elit. Maecenas viverra eleifend lacus eu porttitor. \r\nCurabitur tempus libero eget tortor scelerisque, nec accumsan sem consequat. \r\nIn tristique quis risus ac maximus. In posuere nunc ut diam sollicitudin commodo. Nullam laoreet nisl a elementum placerat. Pellentesque iaculis rutrum ipsum ac vestibulum. Fusce at neque vel justo semper auctor. Vestibulum porta mi vel lacus tristique porta. Integer gravida bibendum ante, vitae scelerisque massa elementum at. Nullam eget risus ac lorem luctus auctor. ','/internet_company1-3.jpg',0,1),(4,'2016-10-20 00:00:00','Nouvelle réalisation','Grosse ouevre','Mauris at lacus mi. Etiam pretium commodo diam, faucibus congue nibh aliquet et. Cras ullamcorper ullamcorper elit, in convallis nulla pretium id. Nam lectus mi, gravida eu vehicula congue, accumsan vitae ex. Aenean aliquam at urna at convallis. Donec libero felis, condimentum non mi sit amet, bibendum molestie ante. Nunc blandit ac magna vel mattis. Ut eget mi odio. Vestibulum ultricies odio ut rhoncus mollis. Morbi sit amet porta diam. Sed non leo aliquet ex rutrum vulputate. ','/IMG_8422-4.jpg',0,1),(5,'2016-10-02 00:00:00','De belles soudures','escalier inox','blabla actu','/ESCALIERS_108-5.jpg',0,1);
 /*!40000 ALTER TABLE `news` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -302,7 +303,7 @@ CREATE TABLE `product_image` (
   `fichier` varchar(100) NOT NULL,
   `defaut` enum('oui','non') NOT NULL DEFAULT 'non',
   PRIMARY KEY (`num_image`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -311,7 +312,7 @@ CREATE TABLE `product_image` (
 
 LOCK TABLES `product_image` WRITE;
 /*!40000 ALTER TABLE `product_image` DISABLE KEYS */;
-INSERT INTO `product_image` VALUES (10,1,'/be_ce_de_asques_003-1.jpg','oui'),(11,2,'/Carvalho_sci_Madazo_008-2.jpg','oui'),(12,2,'/Carvalho_sci_Madazo_012-2.jpg','non'),(13,2,'/Carvalho_sci_Madazo_011-2.jpg','non'),(15,3,'/ESCALIERS_103-3.jpg','oui'),(16,3,'/ESCALIERS_108-3.jpg','non'),(17,3,'/ESCALIERS_106-3.jpg','non'),(18,4,'/IMG_8421-4.jpg','oui'),(19,4,'/IMG_8422-4.jpg','non'),(20,5,'/berdeaux_perigueux_lacanau_008-5.jpg','oui'),(21,6,'/ESCALIERS_108-6.jpg','oui'),(22,7,'/ESCALIERS_105-7.jpg','oui'),(23,8,'/ESCALIERS_106-8.jpg','oui');
+INSERT INTO `product_image` VALUES (10,1,'/be_ce_de_asques_003-1.jpg','oui'),(11,2,'/Carvalho_sci_Madazo_008-2.jpg','oui'),(12,2,'/Carvalho_sci_Madazo_012-2.jpg','non'),(13,2,'/Carvalho_sci_Madazo_011-2.jpg','non'),(15,3,'/ESCALIERS_103-3.jpg','oui'),(16,3,'/ESCALIERS_108-3.jpg','non'),(17,3,'/ESCALIERS_106-3.jpg','non'),(18,4,'/IMG_8421-4.jpg','oui'),(19,4,'/IMG_8422-4.jpg','non'),(20,5,'/berdeaux_perigueux_lacanau_008-5.jpg','oui'),(21,6,'/ESCALIERS_108-6.jpg','oui'),(22,7,'/ESCALIERS_105-7.jpg','oui'),(23,8,'/ESCALIERS_106-8.jpg','oui'),(24,3,'/398-3.jpg','non');
 /*!40000 ALTER TABLE `product_image` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -324,4 +325,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-10-14 23:48:41
+-- Dump completed on 2016-10-21  9:43:54

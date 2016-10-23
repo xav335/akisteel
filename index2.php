@@ -61,17 +61,10 @@
 <!doctype html>
 <html class="no-js" lang="fr" dir="ltr">
 	<head>
-		<title>AKISTEEL</title>
+		<title>Présentation de la société AKISTEEL</title>
 		<? include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/meta.php" ); ?>
 	</head>
-	<body>
-		
-		<div class="popup">
-			<div class="row">
-				<a class="close">X</a>
-				<?=$contenu_popup?>
-			</div>
-		</div>
+	<body class="presentation">
 		
 		<? include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/header.php" ); ?>
 		
@@ -92,10 +85,7 @@
 							<strong>AKISTEEL</strong> s'adresse autant aux <strong>particuliers</strong> qu'au <strong>secteur industriel, tertiaire</strong> et 
 							<strong>collectif</strong>.
                     	</p>
-						<p>
-							Proposant la <strong>fabrication sur mesure</strong> de tous vos ouvrages métalliques 
-							(escaliers, portes, rideaux métallique et bien d'autre encore). Mais aussi la rénovation et le remplacement de l'existant.
-						</p>
+						
 					</div>					
 				</div>
 			</div>
@@ -114,10 +104,10 @@
 				</div>
 				<div class="swiper-container flex">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide" style="background-image:url('img/reference-01.jpg');"></div>
+						<div class="swiper-slide" style="background-image:url('img/reference-04.jpg');"></div>
 						<div class="swiper-slide" style="background-image:url('img/reference-02.jpg');"></div>
 						<div class="swiper-slide" style="background-image:url('img/reference-03.jpg');"></div>
-						<div class="swiper-slide" style="background-image:url('img/reference-04.jpg');"></div>
+						<div class="swiper-slide" style="background-image:url('img/reference-01.jpg');"></div>
 					</div>
 					<!-- Add Arrows -->
 					<div class="swiper-button-next"></div>
@@ -128,19 +118,19 @@
 		
 		<? include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/footer.php" ); ?>
 		<? include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/scripts.php" ); ?>
-
+		
 		<script>
 			var swiper = new Swiper('.swiper-container', {
 				nextButton: '.swiper-button-next',
 				prevButton: '.swiper-button-prev',
-				autoplay: 4000,
 				slidesPerView: 1,
 				paginationClickable: true,
 				spaceBetween: 0,
 				loop: true
 			});
+			
 			$(document).ready(function(){
-				$('nav ul li:nth-child(1)').addClass('active');
+				$('nav ul li:nth-child(2)').addClass('active');
 			});
 		</script>
 	</body>

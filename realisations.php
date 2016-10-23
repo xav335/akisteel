@@ -73,7 +73,7 @@
 						<p>Quelques<br/>réalisations</p>
 					</div>
 				</div>
-				
+				<div class="titre3">
 				<?
 				// ---- Affichage des catégories principales ------------------------- //
 				if ( !empty( $liste_categorie ) ) {
@@ -146,48 +146,7 @@
 				// ------------------------------------------------------------------- //
 				?>
 				
-				<!--<div class="large-4 medium-4 small-12 columns">
-					<figure>
-						<a href="img/reference-01.jpg" data-fancybox-group="realisations"><img src="img/reference-01.jpg" alt="" /></a>
-						<figcaption>Légende associée</figcaption>
-					</figure>
 				</div>
-				<div class="large-4 medium-4 small-12 columns">
-					<figure>
-						<a href="img/reference-01.jpg" data-fancybox-group="realisations"><img src="img/reference-01.jpg" alt="" /></a>
-						<figcaption>Légende associée</figcaption>
-					</figure>
-				</div>
-				<div class="large-4 medium-4 small-12 columns">
-					<figure>
-						<a href="img/reference-01.jpg" data-fancybox-group="realisations"><img src="img/reference-01.jpg" alt="" /></a>
-						<figcaption>Légende associée</figcaption>
-					</figure>
-				</div>
-				<div class="large-4 medium-4 small-12 columns">
-					<figure>
-						<a href="img/reference-01.jpg" data-fancybox-group="realisations"><img src="img/reference-01.jpg" alt="" /></a>
-						<figcaption>Légende associée</figcaption>
-					</figure>
-				</div>
-				<div class="large-4 medium-4 small-12 columns">
-					<figure>
-						<a href="img/reference-01.jpg" data-fancybox-group="realisations"><img src="img/reference-01.jpg" alt="" /></a>
-						<figcaption>Légende associée</figcaption>
-					</figure>
-				</div>
-				<div class="large-4 medium-4 small-12 columns">
-					<figure>
-						<a href="img/reference-01.jpg" data-fancybox-group="realisations"><img src="img/reference-01.jpg" alt="" /></a>
-						<figcaption>Légende associée</figcaption>
-					</figure>
-				</div>
-				<div class="large-4 medium-4 small-12 columns">
-					<figure>
-						<a href="img/reference-01.jpg" data-fancybox-group="realisations"><img src="img/reference-01.jpg" alt="" /></a>
-						<figcaption>Légende associée</figcaption>
-					</figure>
-				</div>-->
 					
 			</div>
 		</div>

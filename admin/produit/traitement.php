@@ -50,7 +50,7 @@
 			}*/
 			// ---------------------------------------------- //
 			
-			// ---- Traitement des données ------------------ //
+			// ---- Traitement des donnï¿½es ------------------ //
 			if ( 1 == 1 ) {
 				$id = $produit->gererDonnees( $_POST, $debug );
 			}
@@ -68,7 +68,7 @@
 					$filenameDest = $imageManager->fileDestManagement( $source, $id );
 					if ( $debug ) echo "--- filenameDest : " . $filenameDest . "<br>";
 					
-					// ---- Création des différentes images ------------ //
+					// ---- Crï¿½ation des diffï¿½rentes images ------------ //
 					if ( 1 == 1 ) {
 						
 						// ---- Image de taille "normale" ---- //
@@ -79,7 +79,7 @@
 						// ---- Image de taille "grande" ----- //
 						$destination = $_SERVER['DOCUMENT_ROOT'] . '/photos/produit/realisation_liste' . $filenameDest;
 						if ( $debug ) echo "--- destination : " . $destination . "<br>";
-						$imageManager->imageResize( $source, $destination, 223, 299, ZEBRA_IMAGE_CROP_CENTER );
+						$imageManager->imageResize( $source, $destination, null, 600, false);
 						
 						// ---- Image de taille "vignette" --- //
 						$destination = $_SERVER['DOCUMENT_ROOT'] . '/photos/produit/vignette' . $filenameDest;
@@ -88,7 +88,7 @@
 					}
 					// ------------------------------------------------- //
 					
-					// ---- Ce produit a-t-il une image par défaut? ---- //
+					// ---- Ce produit a-t-il une image par dï¿½faut? ---- //
 					if ( 1 == 1 ) {
 						$image_defaut = $produit_image->getImageDefaut( $id, $debug );
 						$has_imageDefaut = ( $image_defaut[ "fichier" ] != '' ) ? true : false;
@@ -128,7 +128,7 @@
 			}
 			// ------------------------------------------------------------------- //
 				
-			// ---- Redirection après traitement ------------ //
+			// ---- Redirection aprï¿½s traitement ------------ //
 			if ( 1 == 1 ) {
 				
 				// ---- Modification... ---- //
@@ -146,7 +146,7 @@
 		} 
 		// ------------------------------------------------------------------------ //
 		
-		// ---- Définition d'une image par défaut --------------------------------- //
+		// ---- Dï¿½finition d'une image par dï¿½faut --------------------------------- //
 		if ( $_POST[ "mon_action" ] == "par defaut" ) {
 			
 			// ---- Liste des autres images de l'offre ---- //
@@ -154,7 +154,7 @@
 			$recherche[ "num_produit" ] = $_POST[ "id" ];
 			$liste_image = $produit_image->getListe( $recherche, $debug );
 			
-			// ---- On passe toutes les autres à "non" ---- //
+			// ---- On passe toutes les autres ï¿½ "non" ---- //
 			if ( !empty( $liste_image ) ) {
 				foreach( $liste_image as $_image ) {
 					$produit_image->setChamp( "defaut", 'non', $_image[ "num_image" ], $debug );

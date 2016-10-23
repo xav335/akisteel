@@ -20,10 +20,11 @@
 				<div class="contenu">
 					<div class="qui-sommes-nous">
 						<h1>Qui sommes-<span>nous</span> ?</h1>
-						<p>Consectetur adipiscing elit. Suspendisse quis risus nec elit pharetra ultrices at id dui. Sed lobortis diam in adipiscing volutpat. Etiam volutpat in ipsum ut ultricies. Phasellus id bibendum quam. Sed justo felis, consequat sed magna vitae, rutrum auctor quam.</p>
-						<p>Consectetur adipiscing elit. Suspendisse quis risus nec elit pharetra ultrices at id dui. Sed lobortis diam in adipiscing volutpat. Etiam volutpat in ipsum ut ultricies. Phasellus id bibendum quam. Sed justo felis, consequat sed magna vitae, rutrum auctor quam.</p>
-						<p>Consectetur adipiscing elit. Suspendisse quis risus nec elit pharetra ultrices at id dui. Sed lobortis diam in adipiscing volutpat. Etiam volutpat in ipsum ut ultricies. Phasellus id bibendum quam. Sed justo felis, consequat sed magna vitae, rutrum auctor quam.</p>
-						<p>Consectetur adipiscing elit. Suspendisse quis risus nec elit pharetra ultrices at id dui. Sed lobortis diam in adipiscing volutpat. Etiam volutpat in ipsum ut ultricies. Phasellus id bibendum quam. Sed justo felis, consequat sed magna vitae, rutrum auctor quam.</p>
+						<p>
+						  <strong>AKISTEEL</strong> s'engage à vous offrir des <strong>solutions complètes et adaptées</strong> à vos différents besoins.</p>
+                            <p>Confiez- nous vos projets, nous mettrons tout en œuvre pour les mener à bien.</p>
+                           <p> N'hésitez pas à nous contacter pour devis ou informations complémentaires...
+                            </p>
 					</div>
 				</div>
 			</div>

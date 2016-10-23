@@ -28,12 +28,13 @@
 				<div class="large-12 columns">
 					<h1>Nos actus et évènements</h1>
 				</div>
+				<div class="actualite">
 			
 			<?
 			if ( !empty( $liste_actualite ) ) {
 				foreach( $liste_actualite as $_actualite ) {
 					echo "<a name='" . $_actualite[ "id_news" ] . "'></a>\n";
-					echo "<div class='row actualite'>\n";
+					echo "<div class='row'>\n";
 					echo "	<div class='large-4 medium-4 small-12 columns'>\n";
 					echo "		<a href='photos/news/normale" . $_actualite[ "image" ] . "' class='fancybox'><img src='/photos/news/liste_actualite" . $_actualite[ "image" ] . "' alt='' /></a>\n";
 					echo "	</div>\n";
@@ -42,11 +43,13 @@
 					echo "		<h4>" . $_actualite[ "sous_titre" ] . "</h4>\n";
 					echo "		<p>" . $_actualite[ "contenu" ] . "</p>\n";
 					echo "	</div>\n";
-					echo "	<hr>";
+					
 					echo "</div>\n";
+					echo "	<hr>";
 				}
 			}
 			?>
+			 </div>
 			</div>
 		</div>
 		<!-- Fin Actualités -->
