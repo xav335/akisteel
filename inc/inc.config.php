@@ -44,7 +44,7 @@
 	define( "MAILNAMECUSTOMER", "Akisteel" );
 	define( "URLSITEDEFAULT", 	"http://www.akisteel.com/" );
 	define( "FACEBOOK_LINK", 	"https://www.facebook.com/xxx" );
-	define( "DAILYMOTION_LINK", "http://www.dailymotion.com/video/xxxx" );
+	define( "DAILYMOTION_LINK", "#" );
 	
 	// ---- Mail d'envoi
 	define( "MAIL_TEST", 	"franck_langleron@hotmail.com" ); // Si rempli alors cette valeur ser utilisée pour les différents envois de mails

@@ -13,7 +13,7 @@
 		//print_pre( $result[ 0 ] );
 		
 		// ---- On place une actu dans le cadre ------------ //
-		if ( !empty( $result ) ) {
+		/*if ( !empty( $result ) ) {
 			$titre = 		$result[ 0 ][ "titre" ];
 			$sous_titre = 	$result[ 0 ][ "sous_titre" ];
 			$texte = 		$result[ 0 ][ "contenu" ];
@@ -36,7 +36,7 @@
 		// ------------------------------------------------- //
 		
 		// ---- Liens de redirection vers autres sites ----- //
-		else {
+		else {*/
 			$image_gauche = "http://www.placehold.it/302x310/EFEFEF/171717&text=Img gauche";
 			$url_gauche = "http://www.google.fr";
 			$image_droite = "http://www.placehold.it/302x310/EFEFEF/171717&text=Img droite";
@@ -51,7 +51,7 @@
 			$contenu_popup .= "<div class='large-12 medium-12 small-12 columns'>\n";
 			$contenu_popup .= "	<a href='http:\/\/www.akidoor.net' target='_blank'><img src='img/akidoor.png'  alt='' /></a>\n";
 			$contenu_popup .= "</div>\n";
-		}
+		//}
 		// ------------------------------------------------- //
 		
 	}
