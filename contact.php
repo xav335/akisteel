@@ -96,11 +96,11 @@
 						<h1>Contacter AKISTEEL</h1>
 						<p>
 							AKISTEEL<br/>
-							52 rue Camille Pelletan<br/>
-							33150 Cenon
+							1 ZA la Palue<br/>
+							33240 CUBZAC LES PONTS
 						</p>
 						<p>
-							Tél. <a href="tel:+33557614541">05 57 61 45 41</a>
+							Tél. <a href="tel:+33557614541">05 57 43 15 06</a>
 						</p>
 					</div>
 					<h2>Formulaire de contact</h2>
@@ -190,7 +190,8 @@
 						streetViewControl: false,
 						scaleControl: false,
 						overviewMapControl: false,
-						center: new google.maps.LatLng(44.858289, -0.5192039999999452)
+						center: new google.maps.LatLng(44.9665366, -0.4551398)
+						//center: new google.maps.LatLng(44.858289, -0.5192039999999452)
 					};
 					
 					map = new google.maps.Map(document.getElementById('map-canvas'),
@@ -254,14 +255,14 @@
 					};
 					
 					var marker = new google.maps.Marker({
-						position: new google.maps.LatLng(44.858289, -0.5192039999999452),
+						position: new google.maps.LatLng(44.9665366, -0.4551398),
 						map: map,
 						icon: icon,
 						title: 'AKISTEEL'
 					});
 					 marker.addListener('click', function() {
 					 //window.location.href = 'http://tinyurl.com/zsf4gqo';
-					 window.open('https://goo.gl/04RSFv','_blank');
+					 window.open('https://goo.gl/68dZJA','_blank');
 					 });
 				
 				}
