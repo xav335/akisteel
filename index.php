@@ -13,34 +13,34 @@
 		//print_pre( $result[ 0 ] );
 		
 		// ---- On place une actu dans le cadre ------------ //
-		/*if ( !empty( $result ) ) {
+		if ( !empty( $result ) ) {
+			$classe_popup = "popup_centre";
 			$titre = 		$result[ 0 ][ "titre" ];
 			$sous_titre = 	$result[ 0 ][ "sous_titre" ];
 			$texte = 		$result[ 0 ][ "contenu" ];
-			if ( strlen( $texte ) > 300 ) $texte = substr( $texte, 0, 300 ) . " ...";
-			$image = 		"/photos/news/accueil" . $result[ 0 ][ "image" ];
+			if ( strlen( $texte ) > 200 ) $texte = substr( $texte, 0, 200 ) . " ...";
+			$image = 		"/photos/news/liste_actualite" . $result[ 0 ][ "image" ];
 			
-// 			$contenu_popup .= "<div class='large-6 medium-6 small-12 columns'>\n";
-// 			$contenu_popup .= "	<div class='text-popup'>\n";
-// 			$contenu_popup .= "		<p>" . $titre . "</p>\n";
-// 			$contenu_popup .= "		<p>" . $sous_titre . "</p>\n";
-// 			$contenu_popup .= "		<p>" . $texte . "<br><a href='actualites.php#" . $result[ 0 ][ "id_news" ] . "'>Lire la suite</a></p>\n";
-// 			$contenu_popup .= "	</div>\n";
-// 			$contenu_popup .= "</div>\n";
-// 			$contenu_popup .= "<div class='large-6 medium-6 small-12 columns'>\n";
-// 			$contenu_popup .= "	<img src='" . $image . "' alt='' />\n";
-// 			$contenu_popup .= "</div>\n";
-			
-			
+			$contenu_popup .= "<div class='large-6 medium-6 small-12 columns'>\n";
+			$contenu_popup .= "	<div class='text-popup'>\n";
+			$contenu_popup .= "		<p>" . $titre . "</p>\n";
+			$contenu_popup .= "		<p>" . $sous_titre . "</p>\n";
+			$contenu_popup .= "		<p>" . $texte . "<br><a href='actualites.php#" . $result[ 0 ][ "id_news" ] . "'>Lire la suite</a></p>\n";
+			$contenu_popup .= "	</div>\n";
+			$contenu_popup .= "</div>\n";
+			$contenu_popup .= "<div class='large-6 medium-6 small-12 columns'>\n";
+			$contenu_popup .= "	<img src='" . $image . "' alt='' />\n";
+			$contenu_popup .= "</div>\n";
 		}
 		// ------------------------------------------------- //
 		
 		// ---- Liens de redirection vers autres sites ----- //
-		else {*/
+		else {
+			$classe_popup =	"popup";
 			$image_gauche = "http://www.placehold.it/302x310/EFEFEF/171717&text=Img gauche";
-			$url_gauche = "http://www.google.fr";
+			$url_gauche = 	"http://www.google.fr";
 			$image_droite = "http://www.placehold.it/302x310/EFEFEF/171717&text=Img droite";
-			$url_droite = "http://www.iconeo.fr";
+			$url_droite = 	"http://www.iconeo.fr";
 			
 // 			$contenu_popup .= "<div class='large-6 medium-6 small-12 columns'>\n";
 // 			$contenu_popup .= "	<a href='" . $url_gauche . "' target='_blank'><img src='" . $image_gauche . "' alt='' /></a>\n";
@@ -51,7 +51,7 @@
 			$contenu_popup .= "<div class='large-12 medium-12 small-12 columns'>\n";
 			$contenu_popup .= "	<a href='http:\/\/www.akidoor.net' target='_blank'><img src='img/akidoor.png'  alt='' /></a>\n";
 			$contenu_popup .= "</div>\n";
-		//}
+		}
 		// ------------------------------------------------- //
 		
 	}
@@ -66,7 +66,7 @@
 	</head>
 	<body>
 		
-		<div class="popup">
+		<div id="popup" class="<?=$classe_popup?>">
 			<div class="row">
 				<a class="close">X</a>
 				<?=$contenu_popup?>
@@ -130,6 +130,11 @@
 		<? include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/scripts.php" ); ?>
 
 		<script>
+			
+			$(document).ready(function(){
+				$('nav ul li:nth-child(1)').addClass('active');
+			});
+			
 			var swiper = new Swiper('.swiper-container', {
 				nextButton: '.swiper-button-next',
 				prevButton: '.swiper-button-prev',
@@ -139,9 +144,12 @@
 				spaceBetween: 0,
 				loop: true
 			});
-			$(document).ready(function(){
-				$('nav ul li:nth-child(1)').addClass('active');
+			
+			// ---- Fermeture du popup -------------- //
+			$( ".close" ).click(function() {
+				$( "#popup" ).fadeOut();
 			});
+			
 		</script>
 	</body>
 </html>
