@@ -14,7 +14,7 @@
 				</div>
 				<div class="large-6 medium-12 small-12 columns social" data-equalizer-watch>
 					<a href="<?=FACEBOOK_LINK?>" class="facebook">Rejoignez-nous !</a>
-					<a href="tel:+33557614541" class="telephone">05 57 61 45 41</a>
+					<a href="tel:+33557431506" class="telephone">05 57 43 15 06</a>
 				</div>
 			</div>
 		</header>

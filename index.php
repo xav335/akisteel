@@ -92,6 +92,7 @@
 							<strong>AKISTEEL</strong> s'adresse autant aux <strong>particuliers</strong> qu'au <strong>secteur industriel, tertiaire</strong> et 
 							<strong>collectif</strong>.
                     	</p>
+                    	<br>
 						<p>
 							Proposant la <strong>fabrication sur mesure</strong> de tous vos ouvrages métalliques 
 							(escaliers, portes, rideaux métallique et bien d'autre encore). Mais aussi la rénovation et le remplacement de l'existant.

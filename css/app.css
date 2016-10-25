@@ -60,7 +60,7 @@ nav ul li.active a, nav ul li:hover a {color:#2f6ddf;}
 nav ul li:after {content:'|';padding:0 15px;}
 nav ul li:last-child:after {display:none;}
 .social {position:relative;background-image:url('../img/bg-top-right.png');background-repeat:no-repeat;}
-.social .facebook {font-weight:lighter;font-size:10px;text-transform:uppercase;color:#fff;display:block;margin-top:80px;margin-left:40px;}
+.social .facebook {font-weight:lighter;font-size:12px;text-transform:uppercase;color:#fff;display:block;margin-top:80px;margin-left:40px;}
 .social .facebook:after {content:url('../img/logo-facebook.svg');vertical-align:-12px;padding-left:10px;}
 .social .telephone {position:absolute;font-weight:bold;font-size:30px;text-transform:uppercase;color:#fff;display:block;top:90px;left:50%;margin-left:-90px;}
 .social .telephone:before {content:url('../img/telephone.svg');vertical-align:-12px;padding-right:10px;}
