@@ -105,7 +105,7 @@ footer img {max-width:250px;}
 }
 .popup_centre .row {background:#fff;height:100%;}
 .popup_centre .row .columns {padding:0;}
-.popup_centre .text-popup {padding:20px 30px; overflow: auto;}
+.popup_centre .text-popup {padding:20px 30px; height:250px; overflow: auto;}
 .popup_centre .text-popup p:first-child {text-transform:uppercase;color:#a9a9a9;font-size:18px;}
 .popup_centre .text-popup p:nth-child(2) {font-size:30px;line-height:30px;text-decoration:underline;font-weight:bold;text-align:left;}
 .popup_centre .close {font-weight:bolder;font-size:18px;position:absolute;top:5px;right:5px;color:#17356d;cursor:pointer;}
