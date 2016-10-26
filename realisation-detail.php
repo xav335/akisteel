@@ -105,7 +105,7 @@
 					</div>
 					
 					<div class="large-5 columns">
-					   <?php if (!empty(trim($description))): ?>
+					   <?php if (trim($description) !=''): ?>
 						<h3>Descriptif</h3>
 						<p><?=$description?></p>
 						<?php endif;?>
