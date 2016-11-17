@@ -199,10 +199,10 @@ figcaption {text-align:center;}
 	.popup .row .columns {position:relative;display:block;float:none;clear:both;}
 	.popup img {margin:0 auto;display:block;}
 	nav ul li:first-child {display:none;}
-	.content .quoi, .content .quel-style {padding:30px 10px;background:none;}
+	.content .quoi, .content .quel-style {padding:30px 10px;background:none;width:100%;}
 	.vue-de-chantier {top:-60px;}
 	.bulle {top:80px;}
-	.popup .popup_centre {display:none;}
+	#popup, .vue-de-chantier2 {display:none;}
 }
 @media screen and (max-width:375px) {
 	.content .quoi, .content .quel-style {padding:30px 10px;background:none;display:block;float:none;width:100%;}
