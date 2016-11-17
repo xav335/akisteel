@@ -89,8 +89,8 @@
 		
 		<? include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/header.php" ); ?>
 		
-		<div class="row fullwidth content">
-			<div class="large-6 medium-6 small-12 columns">
+		<div class="row fullwidth content" data-equalizer>
+			<div class="large-6 medium-6 small-12 columns" data-equalizer-watch>
 				<div class="contenu">
 					<div class="coordonnees">
 						<h1>Contacter AKISTEEL</h1>
@@ -160,7 +160,7 @@
 					</form>
 				</div>
 			</div>
-			<div class="large-6 medium-6 small-12 columns photos">
+			<div class="large-6 medium-6 small-12 columns photos" data-equalizer-watch>
 				<div id="map-canvas"></div>
 			</div>
 		</div>

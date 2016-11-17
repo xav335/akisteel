@@ -40,7 +40,9 @@
 }
 
 * {font-family:'roboto';}
-body {background:#17356d;}
+html, body {height:auto;}
+html {min-height:100%;}
+body {background:#17356d;min-height:100%;}
 h1, h2 {color:#17356d;font-weight:normal;text-decoration:underline;text-transform:uppercase;font-size:28px;text-align:center;margin-bottom:30px;}
 h3 {color:#17356d;font-weight:normal;text-decoration:underline;text-transform:uppercase;font-size:21px;text-align:center;}
 .titre3 h3 {color:#17356d;font-weight:normal;text-decoration:underline;text-transform:uppercase;font-size:21px;text-align:left;margin-top: 50px; margin-left: 52px;}

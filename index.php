@@ -75,11 +75,11 @@
 		
 		<? include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/header.php" ); ?>
 		
-		<div class="row fullwidth content">
-			<div class="large-6 medium-6 small-12 columns">
+		<div class="row fullwidth content" data-equalizer>
+			<div class="large-6 medium-6 small-12 columns" data-equalizer-watch>
 				<div class="contenu">
 					<div class="quoi">
-						<h3>Qui <span>somme </span>nous ?</h3>
+						<h3>Qui <span>sommes-</span>nous ?</h3>
 						<p>
 							<strong>AKISTEEL</strong> est une entreprise œuvrant dans le domaine de la métallerie-serrurerie. 
 							Elle est composée d'une équipe de 6 techniciens forte de <strong>20 ans d'expérience</strong>.
@@ -100,7 +100,7 @@
 					</div>					
 				</div>
 			</div>
-			<div class="large-6 medium-6 small-12 columns photos">
+			<div class="large-6 medium-6 small-12 columns photos" data-equalizer-watch>
 				<div class="vue-de-chantier flex">
 					<p>
 						Vue<br/>
