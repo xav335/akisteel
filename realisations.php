@@ -74,20 +74,21 @@
 					</div>
 				</div>
 				<div class="titre3">
-				<?
-				// ---- Affichage des catégories principales ------------------------- //
-				if ( !empty( $liste_categorie ) ) {
-					echo "<ul class='tabs' data-tab>\n";
-					
-					foreach ( $liste_categorie as $_categorie ) {
-						$actif = ( $_categorie[ "id" ] == $num_categorie ) ? "active" : "";
-						echo "<li class='tab-title " . $actif . "'><a href='./realisations.php?nc=" . $_categorie[ "id" ] . "'>" . $_categorie[ "nom" ] . "</a></li>\n";
-					}
-					
-					echo "</ul>\n";
-				}
-				// ------------------------------------------------------------------- //
-				
+    				<div class='large-8 medium-8 small-12 columns'>
+    				<?
+    				// ---- Affichage des catégories principales ------------------------- //
+    				if ( !empty( $liste_categorie ) ) {
+    					echo "<ul class='tabs' data-tab>\n";
+    					
+    					foreach ( $liste_categorie as $_categorie ) {
+    						$actif = ( $_categorie[ "id" ] == $num_categorie ) ? "active" : "";
+    						echo "<li class='tab-title " . $actif . "'><a href='./realisations.php?nc=" . $_categorie[ "id" ] . "'>" . $_categorie[ "nom" ] . "</a></li>\n";
+    					}
+    					
+    					echo "</ul>\n</div><div class='large-12 columns'>";
+    				}
+    				// ------------------------------------------------------------------- //
+    				
 				
 				// ---- Affichage des sous catégories -------------------------------- //
 				if ( !empty( $liste_sous_categorie ) ) {
