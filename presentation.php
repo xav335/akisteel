@@ -30,16 +30,16 @@
 				</div>
 			</div>
 			<div class="large-6 medium-6 small-12 columns photos" data-equalizer-watch>
-				<div class="vue-de-chantier flex">
+				<div class="vue-de-chantier flex" onclick="location.href='realisations.php'" style="cursor: pointer;">
 					<p>
 						Vue<br/>
 						de chantier
 					</p>
 				</div>
-				<div class="bulle flex">
+				<div class="bulle flex" onclick="location.href='realisations.php'" style="cursor: pointer;">
 					<p>
-						<span>escalier</span>
-						création sur mesure
+						<span>création sur mesure</span>
+						
 					</p>
 				</div>
 				<div class="swiper-container flex">
