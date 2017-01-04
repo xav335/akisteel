@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.5.44, for debian-linux-gnu (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.38, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: akisteel
 -- ------------------------------------------------------
--- Server version	5.5.44-0+deb8u1
+-- Server version	5.5.38-0+wheezy1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -55,7 +55,7 @@ CREATE TABLE `catproduct` (
   `image` varchar(50) NOT NULL,
   `ordre_affichage` int(11) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=120 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -64,7 +64,7 @@ CREATE TABLE `catproduct` (
 
 LOCK TABLES `catproduct` WRITE;
 /*!40000 ALTER TABLE `catproduct` DISABLE KEYS */;
-INSERT INTO `catproduct` VALUES (41,41,'Protection bois  ','/_MG_5081-41.jpg',1),(43,43,' ','/_MG_5255-43.jpg',2),(54,0,'Balustres','',2),(57,56,'amenagements','',1),(60,60,'Protection bois  ','',1),(65,65,'Protection bois  ','',1),(66,66,'Protection aluminium  ','',2),(68,81,'Balisage ','',2),(69,65,'Protection bois ','',1),(73,71,'Protection en Contre Plaqué   ','',1),(75,75,'Protection aluminium  ','',6),(77,75,'Habillage bois  ','',1),(79,79,'Protection bois ','',5),(80,0,'Escaliers','',1),(81,81,'Gyrophare et rampe  ','',5),(82,82,'Marchepied ','',4),(83,83,'Plastification et résine étanche ','',5),(84,84,'Transformation VP/VU','',8),(85,0,'Divers','',3),(94,94,'Produits','',13),(97,97,'Balisage ','',3),(98,87,'Protection aluminium','',1),(99,80,'Escaliers droits','',1),(100,80,'Escaliers en colimaçon','',2);
+INSERT INTO `catproduct` VALUES (41,41,'Protection bois  ','/_MG_5081-41.jpg',1),(43,43,' ','/_MG_5255-43.jpg',2),(54,54,'Terrasses','',2),(57,56,'amenagements','',1),(60,60,'Protection bois  ','',1),(65,65,'Protection bois  ','',1),(66,66,'Protection aluminium  ','',2),(68,81,'Balisage ','',2),(69,65,'Protection bois ','',1),(73,71,'Protection en Contre Plaqué   ','',1),(75,75,'Protection aluminium  ','',6),(77,75,'Habillage bois  ','',1),(79,79,'Protection bois ','',5),(80,0,'Escaliers','',1),(81,81,'Gyrophare et rampe  ','',5),(82,82,'Marchepied ','',4),(83,83,'Plastification et résine étanche ','',5),(84,84,'Transformation VP/VU','',8),(94,94,'Produits','',13),(97,97,'Balisage ','',3),(98,87,'Protection aluminium','',1),(99,80,'Escaliers droits','',1),(100,80,'Escaliers en colimaçon','',2),(101,0,'Portails','',3),(102,80,'Escaliers tournants','',3),(103,0,'Marquise','',4),(104,101,'Battants','',1),(105,101,'Coulissants','',2),(106,103,'Vitrées','',1),(107,103,'Pleines','',2),(108,0,'Gardes Corps','',5),(109,108,'Mezzanine / Terrasses','',1),(110,108,'Balcons','',2),(111,0,'Portes','',6),(112,112,'Sectionnelles','',7),(113,0,'Portes industrielles','',7),(114,113,'Sectionnelles','',1),(115,113,'Rideaux métallique','',2),(116,0,'Portes parking','',8),(117,116,'Basculante','',1),(118,111,'Issue de secours','',1),(119,111,'Vitrées','',2);
 /*!40000 ALTER TABLE `catproduct` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -277,7 +277,7 @@ CREATE TABLE `product` (
   `fichier_pdf` varchar(100) NOT NULL,
   `online` enum('0','1') NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -286,7 +286,7 @@ CREATE TABLE `product` (
 
 LOCK TABLES `product` WRITE;
 /*!40000 ALTER TABLE `product` DISABLE KEYS */;
-INSERT INTO `product` VALUES (1,85,'Support spécial',' ','','1'),(2,100,'Escalier en colimaçon','réalisation top','','1'),(3,99,'Escalier droit',' ','/ESCALIERS_106-3.jpg','1'),(4,54,'Balustre',' ','','1'),(5,54,'balustre',' ','','1'),(6,99,'beau design',' ','','1'),(7,99,'belles soudures',' ','','1'),(8,85,'fabrication',' ','','1');
+INSERT INTO `product` VALUES (1,85,'Support spécial',' ','','1'),(2,100,'Escalier en colimaçon','réalisation top','','1'),(4,54,'Balustre',' ','','1'),(5,110,'Garde corps résidentiel',' ','','1'),(6,99,'Escalier droit intérieure / extérieure',' ','','1'),(8,85,'fabrication',' ','','1'),(9,109,'Garde corps ','Akisteel vous propose le Fabrication et Pose de garde corps pour mezzanine et terrasse en gironde','','1');
 /*!40000 ALTER TABLE `product` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -303,7 +303,7 @@ CREATE TABLE `product_image` (
   `fichier` varchar(100) NOT NULL,
   `defaut` enum('oui','non') NOT NULL DEFAULT 'non',
   PRIMARY KEY (`num_image`)
-) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=57 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -312,7 +312,7 @@ CREATE TABLE `product_image` (
 
 LOCK TABLES `product_image` WRITE;
 /*!40000 ALTER TABLE `product_image` DISABLE KEYS */;
-INSERT INTO `product_image` VALUES (18,4,'/IMG_8421-4.jpg','oui'),(19,4,'/IMG_8422-4.jpg','non'),(25,5,'/berdeaux_perigueux_lacanau_008-5.jpg','oui'),(26,6,'/berdeaux_perigueux_lacanau_005-6.jpg','oui'),(27,7,'/ESCALIERS_104-7.jpg','oui'),(28,7,'/ESCALIERS_048-7.jpg','non'),(29,7,'/ESCALIERS_049-7.jpg','non'),(30,7,'/ESCALIERS_050-7.jpg','non'),(31,3,'/ESCALIERS_103-3.jpg','oui'),(32,8,'/be_ce_de_asques_003-8.jpg','oui'),(33,1,'/berdeaux_perigueux_lacanau_003-1.jpg','oui'),(34,1,'/berdeaux_perigueux_lacanau_002-1.jpg','non'),(35,1,'/berdeaux_perigueux_lacanau_004-1.jpg','non'),(36,2,'/ESCALIERS_044-2.jpg','oui'),(37,2,'/ESCALIERS_045-2.jpg','non'),(38,2,'/ESCALIERS_047-2.jpg','non');
+INSERT INTO `product_image` VALUES (18,4,'/IMG_8421-4.jpg','oui'),(19,4,'/IMG_8422-4.jpg','non'),(26,6,'/berdeaux_perigueux_lacanau_005-6.jpg','non'),(27,7,'/ESCALIERS_104-7.jpg','oui'),(28,7,'/ESCALIERS_048-7.jpg','non'),(29,7,'/ESCALIERS_049-7.jpg','non'),(30,7,'/ESCALIERS_050-7.jpg','non'),(31,3,'/ESCALIERS_103-3.jpg','oui'),(32,8,'/be_ce_de_asques_003-8.jpg','oui'),(33,1,'/berdeaux_perigueux_lacanau_003-1.jpg','oui'),(34,1,'/berdeaux_perigueux_lacanau_002-1.jpg','non'),(35,1,'/berdeaux_perigueux_lacanau_004-1.jpg','non'),(36,2,'/ESCALIERS_044-2.jpg','oui'),(37,2,'/ESCALIERS_045-2.jpg','non'),(38,2,'/ESCALIERS_047-2.jpg','non'),(39,6,'/300ae03a570c21d1ed60dad890dc2834-6.jpg','non'),(40,6,'/ESCALIERS_007-6.jpg','oui'),(41,6,'/ESCALIERS_008-6.jpg','non'),(42,6,'/ESCALIERS_011-6.jpg','non'),(43,6,'/ESCALIERS_032-6.jpg','non'),(44,6,'/ESCALIERS_073-6.jpg','non'),(45,6,'/ESCALIERS_075-6.jpg','non'),(46,6,'/ESCALIERS_094-6.jpg','non'),(47,6,'/ESCALIERS_103-6.jpg','non'),(48,5,'/berdeaux_perigueux_lacanau_007-5.jpg','non'),(49,5,'/berdeaux_perigueux_lacanau_009-5.jpg','oui'),(50,9,'/azema_004-9.jpg','non'),(51,9,'/azema_005-9.jpg','non'),(52,9,'/azema_006-9.jpg','non'),(53,9,'/azema_007-9.jpg','non'),(54,9,'/ESCALIERS_081-9.jpg','oui'),(55,9,'/ESCALIERS_082-9.jpg','non'),(56,9,'/azema_003-9.jpg','non');
 /*!40000 ALTER TABLE `product_image` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -325,4 +325,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-10-23 15:44:57
+-- Dump completed on 2017-01-04 15:25:02
