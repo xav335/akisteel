@@ -34,7 +34,7 @@
 		<div class="row">
 			<div class="col-md-8">
 				<h3>Statistiques</h3>
-				<iframe id="laframe" src="http://www.iconeo.fr/awstats/awstats.pl?config=www.modul-ouest.com&framename=mainright" style="width:720px;height:500px;" frameborder="1" ></iframe>
+				<iframe id="laframe" src="http://www.iconeo.fr/awstats/awstats.pl?config=www.akisteel.fr&framename=mainright" style="width:720px;height:500px;" frameborder="1" ></iframe>
 			</div>
 			<div class="col-md-4 wait">
 				<div class="panel panel-default">
