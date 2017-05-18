@@ -134,7 +134,7 @@
 			$(document).ready(function(){
 				
 				//$('.contenu-realisations a').fancybox();
-				$('nav ul li:nth-child(3)').addClass('active');	
+				$('nav ul li:nth-child(2)').addClass('active');	
 				
 				var galleryTop = new Swiper('.gallery-top', {
 			        nextButton: '.swiper-button-next',

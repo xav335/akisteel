@@ -96,12 +96,13 @@
 						<h1>Contacter AKISTEEL</h1>
 						<p>
 							AKISTEEL<br/>
-							1 ZA la Palue<br/>
-							33240 CUBZAC LES PONTS
+							99 Route d'Anglumeau<br/>
+							33450 IZON
 						</p>
 						<p>
-							Tél. <a href="tel:+33557614541">05 57 43 15 06</a>
+							Tél. <a href="tel:+33557231903">05 57 23 19 03</a>
 						</p>
+						
 					</div>
 					<h2>Formulaire de contact</h2>
 					
@@ -159,6 +160,7 @@
 						</div>
 					</form>
 				</div>
+				<img alt="" src="img/voiture.jpg">
 			</div>
 			<div class="large-6 medium-6 small-12 columns photos" data-equalizer-watch>
 				<div id="map-canvas"></div>
@@ -173,7 +175,7 @@
 		<script>
 			
 			$(document).ready(function(){
-				$('nav ul li:nth-child(5)').addClass('active');
+				$('nav ul li:nth-child(4)').addClass('active');
 			});
 			
 			// ---- Section Gogle Maps ---------------------------------- //
@@ -190,7 +192,8 @@
 						streetViewControl: false,
 						scaleControl: false,
 						overviewMapControl: false,
-						center: new google.maps.LatLng(44.9665366, -0.4551398)
+						center: new google.maps.LatLng(44.911572, -0.352950)
+						//center: new google.maps.LatLng(44.9665366, -0.4551398)
 						//center: new google.maps.LatLng(44.858289, -0.5192039999999452)
 					};
 					
@@ -255,14 +258,14 @@
 					};
 					
 					var marker = new google.maps.Marker({
-						position: new google.maps.LatLng(44.9665366, -0.4551398),
+						position: new google.maps.LatLng(44.911572, -0.352950),
 						map: map,
 						icon: icon,
 						title: 'AKISTEEL'
 					});
 					 marker.addListener('click', function() {
 					 //window.location.href = 'http://tinyurl.com/zsf4gqo';
-					 window.open('https://goo.gl/68dZJA','_blank');
+					 window.open('https://goo.gl/r7cC7U','_blank');
 					 });
 				
 				}

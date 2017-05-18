@@ -68,13 +68,9 @@
 		
 		<div class="row fullwidth content2">
 			<div class="row contenu-realisations">
-				<div class="large-12 columns">
-					<div class="vue-de-chantier2 flex">
-						<p>Quelques<br/>réalisations</p>
-					</div>
-				</div>
+				
 				<div class="titre3">
-    				<div class='large-8 medium-8 small-12 columns'>
+    				<div class='large-12 medium-12 small-12 columns'>
     				<?
     				// ---- Affichage des catégories principales ------------------------- //
     				if ( !empty( $liste_categorie ) ) {
@@ -158,7 +154,7 @@
 		<script>
 			$(document).ready(function(){
 				//$('.contenu-realisations a').fancybox();
-				$('nav ul li:nth-child(3)').addClass('active');		
+				$('nav ul li:nth-child(2)').addClass('active');		
 			});
 		</script>
 		

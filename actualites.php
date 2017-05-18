@@ -30,26 +30,33 @@
 				</div>
 				<div class="actualite">
 			
-			<?
-			if ( !empty( $liste_actualite ) ) {
-				foreach( $liste_actualite as $_actualite ) {
-					echo "<a name='" . $_actualite[ "id_news" ] . "'></a>\n";
-					echo "<div class='row'>\n";
-					echo "	<div class='large-4 medium-4 small-12 columns'>\n";
-					echo "		<a href='photos/news/normale" . $_actualite[ "image" ] . "' class='fancybox'><img src='/photos/news/liste_actualite" . $_actualite[ "image" ] . "' alt='' /></a>\n";
-					echo "	</div>\n";
-					echo "	<div class='large-8 medium-8 small-12 columns'>\n";
-					echo "		<h3>" . $_actualite[ "titre" ] . "</h3>\n";
-					echo "		<h4>" . $_actualite[ "sous_titre" ] . "</h4>\n";
-					echo "		<p>" . $_actualite[ "contenu" ] . "</p>\n";
-					echo "	</div>\n";
-					
-					echo "</div>\n";
-					echo "	<hr>";
-				}
-			}
-			?>
-			 </div>
+        			<?
+        			if ( !empty( $liste_actualite ) ) {
+        				foreach( $liste_actualite as $_actualite ) {
+        					echo "<a name='" . $_actualite[ "id_news" ] . "'></a>\n";
+        					echo "<div class='row'>\n";
+        					echo "	<div class='large-4 medium-4 small-12 columns'>\n";
+        					echo "		<a href='photos/news/normale" . $_actualite[ "image" ] . "' class='fancybox'><img src='/photos/news/liste_actualite" . $_actualite[ "image" ] . "' alt='' /></a>\n";
+        					echo "	</div>\n";
+        					echo "	<div class='large-8 medium-8 small-12 columns'>\n";
+        					echo "		<h3>" . $_actualite[ "titre" ] . "</h3>\n";
+        					echo "		<h4>" . $_actualite[ "sous_titre" ] . "</h4>\n";
+        					echo "		<p>" . $_actualite[ "contenu" ] . "</p>\n";
+        					echo "	</div>\n";
+        					
+        					echo "</div>\n";
+        					echo "	<hr>";
+        				}
+        			}
+        			?>
+			     </div>
+			      <div class="large-6 columns">
+					 <img alt="" src="img/soudeur.jpg">
+				</div>
+			     <div class="large-6 columns">
+					 <img alt="" src="img/escal.jpg">
+				</div>
+			    
 			</div>
 		</div>
 		<!-- Fin Actualités -->
@@ -60,7 +67,7 @@
 		<script>
 			
 			$(document).ready(function(){
-				$('nav ul li:nth-child(4)').addClass('active');
+				$('nav ul li:nth-child(3)').addClass('active');
 			});
 		</script>
 	</body>

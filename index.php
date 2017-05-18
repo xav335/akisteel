@@ -81,23 +81,50 @@
 					<div class="quoi">
 						<h3>Qui <span>sommes-</span>nous ?</h3>
 						<p>
-							<strong>AKISTEEL</strong> est une entreprise œuvrant dans le domaine de la métallerie-serrurerie. 
-							Elle est composée d'une équipe de 6 techniciens forte de <strong>20 ans d'expérience</strong>.
+							<span class="blanc">AKI</span><span class="gris">STEEL</span> est une entreprise œuvrant dans le domaine de la métallerie-serrurerie. 
 							
-							</p>
+                            Elle est dirigée par JEAN- PIERRE DEVEAUX et SEBASTIEN CHALMEY, qui ont su s’entourer d’une équipe de <span class="underl">techniciens 
+                            et technico-commerciaux qualifiés, dotés d’une riche expérience.</span>
+                            <br>
+                            Nous sommes situés dans le sud-ouest de la France, en Nouvelle-Aquitaine, dans le département de la gironde.
+                            <br>
+                            <span class="underl">Notre atelier de fabrication</span> où nous concevons vos ouvrages métalliques se trouve à IZON entre LIBOURNE et BORDEAUX.
+						</p>
+						
 					</div>
 					<div class="quel-style">
 						<h3>Nos <span>Prestations</span> ?</h3>
 						<p>
-							<strong>AKISTEEL</strong> s'adresse autant aux <strong>particuliers</strong> qu'au <strong>secteur industriel, tertiaire</strong> et 
-							<strong>collectif</strong>.
-                    	</p>
-                    	<br>
-						<p>
-							Proposant la <strong>fabrication sur mesure</strong> de tous vos ouvrages métalliques 
-							(escaliers, portes, rideaux métallique et bien d'autre encore). Mais aussi la rénovation et le remplacement de l'existant.
+							<span class="blanc">AKI</span><span class="gris">STEEL</span> s'adresse autant aux <strong>particuliers</strong> 
+							qu'au <strong>secteur industriel, tertiaire</strong> et <strong>collectif</strong>.
+                    	
+							 Proposant la <strong>pose</strong> et la <span class="underl">fabrication sur mesure</span> de vos:
+						</p>	
+							<ul>
+    							<li>Escaliers</li>
+    							<li>Garde-corps</li>
+    							<li>Portails et portillons</li>
+    							<li>Portes industrielles</li>
+    							<li>Portes de garage</li>
+    							<li>Portes d’issus de secours</li>
+    							<li>Accès parking</li>
+    							<li>Menuiseries décoratives</li>
+    							<li>Divers ouvrages métalliques</li>
+    						</ul> 
+    					<p>	
+    						Mais aussi la <span class="underl">rénovation</span> et le <span class="underl">remplacement de l'existant</span> 
 						</p>
-					</div>					
+					</div>	
+					
+					<div class="quoifin">
+        				<p>
+        					<span class="blanc">AKI</span><span class="gris">STEEL</span> s'engage à vous offrir des <strong>solutions complètes et adaptées</strong> à vos différents besoins. <br>
+                            <span class="blanc">AKI</span><span class="gris">STEEL</span> réunie <span class="underl">expertise, réactivité et proximité.</span><br>
+                                Confiez-nous vos projets, nous mettrons tout en œuvre pour les mener à bien.<br>
+        
+                              N'hésitez pas à <a href="contact.php"> nous contacter</a> pour devis ou informations complémentaires<br>
+        				</p>
+        			</div>
 				</div>
 			</div>
 			<div class="large-6 medium-6 small-12 columns photos" data-equalizer-watch>
@@ -115,16 +142,23 @@
 				</div>
 				<div class="swiper-container flex">
 					<div class="swiper-wrapper">
-						<div class="swiper-slide" style="background-image:url('img/reference-01.jpg');"></div>
-						<div class="swiper-slide" style="background-image:url('img/reference-02.jpg');"></div>
-						<div class="swiper-slide" style="background-image:url('img/reference-03.jpg');"></div>
-						<div class="swiper-slide" style="background-image:url('img/reference-04.jpg');"></div>
+					    <div class="swiper-slide" style="background-image:url('img/reference-00.jpg');"></div>
+						<div class="swiper-slide" style="background-image:url('img/reference-001.jpg');"></div>
+						<div class="swiper-slide" style="background-image:url('img/reference-002.jpg');"></div>
+						<div class="swiper-slide" style="background-image:url('img/reference-003.jpg');"></div>
+						<div class="swiper-slide" style="background-image:url('img/reference-004.jpg');"></div>
+						<div class="swiper-slide" style="background-image:url('img/reference-005.jpg');"></div>
+						<div class="swiper-slide" style="background-image:url('img/reference-006.jpg');"></div>
+						<div class="swiper-slide" style="background-image:url('img/reference-007.jpg');"></div>
+						<div class="swiper-slide" style="background-image:url('img/reference-008.jpg');"></div>
 					</div>
 					<!-- Add Arrows -->
 					<div class="swiper-button-next"></div>
 					<div class="swiper-button-prev"></div>
 				</div>
 			</div>
+			
+			
 		</div>
 		
 		<? include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/footer.php" ); ?>
