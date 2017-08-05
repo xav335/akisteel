@@ -43,11 +43,11 @@
 	define( "MAILCUSTOMER", 	"NePasRepondre@akisteel.com" );
 	define( "MAILNAMECUSTOMER", "Akisteel" );
 	define( "URLSITEDEFAULT", 	"http://www.akisteel.com/" );
-	define( "FACEBOOK_LINK", 	"https://www.facebook.com/xxx" );
+	define( "FACEBOOK_LINK", 	"https://www.facebook.com/Akisteel-1327101094038965/" );
 	define( "DAILYMOTION_LINK", "#" );
 	
 	// ---- Mail d'envoi
-	define( "MAIL_TEST", 	"franck_langleron@hotmail.com" ); // Si rempli alors cette valeur ser utilisée pour les différents envois de mails
-	define( "MAIL_CONTACT", "fjavi.gonzalez@gmail.com" );
+	define( "MAIL_TEST", 	"" ); // Si rempli alors cette valeur ser utilisée pour les différents envois de mails
+	define( "MAIL_CONTACT", "contact@akisteel.com" );
 	define( "MAIL_BCC", 	"xav335@hotmail.com,fjavi.gonzalez@gmail.com,jav_gonz@yahoo.com" );
 ?>
