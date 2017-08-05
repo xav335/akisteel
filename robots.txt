@@ -1,0 +1,15 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /stats/ 
+Disallow: /ajax/
+Disallow: /newsletter/
+Disallow: /css/
+Disallow: /js/
+Disallow: /lib/
+Disallow: /log/
+Disallow: /source/
+Disallow: /factures/
+Disallow: /uploads
+
+
+Sitemap: http://www.akisteel.fr/sitemap.xml
