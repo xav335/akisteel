@@ -61,7 +61,7 @@
 <!doctype html>
 <html class="no-js" lang="fr" dir="ltr">
 	<head>
-		<title>AKISTEEL</title>
+		<title>AKISTEEL - Métallerie - Serrurerie - Escaliers - Gardes Corps - Portails</title>
 		<? include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/meta.php" ); ?>
 	</head>
 	<body>

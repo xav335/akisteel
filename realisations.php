@@ -59,7 +59,7 @@
 <!doctype html>
 <html class="no-js" lang="fr" dir="ltr">
 	<head>
-		<title>Quelques réalisations AKISTEEL</title>
+		<title>Réalisations AKISTEEL - Escaliers - Gardes Corps - Portails</title>
 		<? include( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/meta.php" ); ?>
 	</head>
 	<body class="realisations">
