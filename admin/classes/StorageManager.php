@@ -13,11 +13,18 @@ class StorageManager{
 		return $tab[2] . "-" . $tab[1] . "-" . $tab[0];
 	}
 	
+
+			
 	protected function dbConnect() {
+
+	    $host = DBHOST;
+	    $user = DBUSER;
+	    $pass = DBPASSWD;
+	    $bdd  = DBNAME;
 			
 		// connexion
 		try {
-			$this->mysqli = new mysqli ( DBHOST, DBUSER, DBPASSWD, DBNAME ) ;
+			$this->mysqli = new mysqli ($host, $user, $pass, $bdd) ;
 			mysqli_query($this->mysqli,"SET NAMES UTF8");
 		} catch (Exception $e) {
 			throw new Exception("Erreur Connexion DB ". $e->getMessage());
